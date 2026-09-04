@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Jambraoa Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .navbar-brand img{height:40px;width:auto;display:inline-block;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));transition:filter .3s ease;}
+      .ftco-navbar-light.scrolled .navbar-brand img{filter:brightness(0);}
+
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link{text-shadow:0 1px 3px rgba(0,0,0,.45);transition:text-shadow .3s ease,color .3s ease;color:#fff;}
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus{color:#fff;}
+      .ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link{text-shadow:none;}
+      .ftco-navbar-light .navbar-toggler{text-shadow:0 1px 3px rgba(0,0,0,.45);}
+      .ftco-navbar-light.scrolled .navbar-toggler{text-shadow:none;}
+
+      #section-home .ftco-marquee{background:transparent;overflow:hidden;white-space:nowrap;position:absolute;left:50%;margin-left:-50vw;width:100vw;bottom:130px;z-index:3;}
+      #section-home .ftco-hero-cta{position:absolute;bottom:260px;left:50%;transform:translateX(-50%);z-index:3;margin:0;}
+      .ftco-marquee-track{display:inline-flex;align-items:center;animation:ftco-marquee-scroll 149.76s linear infinite;animation-play-state:running !important;}
+      .ftco-marquee-group{display:inline-flex;align-items:center;}
+      .ftco-marquee-item{color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:56px;padding:22px 22px;text-shadow:0 1px 6px rgba(0,0,0,.55);}
+      .ftco-marquee-item .dot{margin-left:22px;opacity:.6;font-weight:400;}
+
+      #section-features .ftco-media{height:100%;display:flex;flex-direction:column;}
+      #section-features .ftco-media .media-body{display:flex;flex-direction:column;flex:1;}
+      #section-features .ftco-media .media-body p.mb-5{height:170px;overflow:hidden;margin-left:10px;margin-right:10px;}
+      #section-features .ftco-media .media-body p.mb-0{margin-top:auto;}
+      #section-features > .container > .row{margin-left:-7.5px;margin-right:-7.5px;}
+      #section-features .col-lg-4,#section-features .col-md-6{padding-left:7.5px;padding-right:7.5px;margin-bottom:15px;}
+
+      .contact-form-card,.contact-form-card input,.contact-form-card select,.contact-form-card textarea,.contact-form-card button{font-family:"Raleway",sans-serif;}
+      .contact-form-card{border-radius:12px;padding:2rem;}
+      .cf-group-label{display:block;font-weight:700;color:#1b2559;font-size:1.1rem;margin-bottom:.75rem;}
+      .cf-label{display:block;font-weight:700;color:#1b2559;font-size:.95rem;margin-bottom:.4rem;}
+      .cf-optional{font-weight:400;color:#8a8fa3;font-size:.8rem;}
+      .cf-input{background:#fff;border:1px solid #e3e3ec;border-radius:8px;padding:0 .9rem;height:48px;line-height:46px;box-shadow:none;}
+      select.cf-input{padding-right:2.4rem;-webkit-appearance:menulist;appearance:menulist;}
+      .cf-input:focus{border-color:#4586ff;box-shadow:0 0 0 .15rem rgba(69,134,255,.15);}
+      textarea.cf-input{height:auto;padding:.65rem .9rem;line-height:1.5;resize:vertical;}
+      .cf-prefix-wrap{position:relative;}
+      .cf-prefix{position:absolute;left:.9rem;top:50%;transform:translateY(-50%);color:#8a8fa3;pointer-events:none;}
+      .cf-input-prefixed{padding-left:1.75rem;}
+      .cf-btn{background:#16215c;color:#fff;border-radius:8px;padding:.7rem 2rem;font-weight:600;}
+      .cf-intro{color:#1b2559;font-size:1.05rem;margin-bottom:1.5rem;}
+      .cf-success{text-align:center;padding:2rem 1rem;}
+      .cf-success p{color:#1b2559;font-size:1.15rem;font-weight:600;margin:0;}
+      .contact-form-card .form-group{margin-bottom:10px;}
+      .cf-checks .form-check{display:flex;align-items:center;padding-left:0;margin-bottom:.4rem;}
+      .cf-checks .form-check-input{position:static;margin:0 2px 0 0;accent-color:#4586ff;}
+      .cf-checks .form-check-label{color:#1b2559;font-size:.9rem;padding-left:0;margin-bottom:0;}
+      .cf-btn:hover{background:#0f1740;color:#fff;}
+      #section-features .ftco-media{margin-bottom:0 !important;}
+      .ftco-modal-content{border-radius:12px;border:none;}
+      .ftco-modal-icon{display:flex;justify-content:center;}
+      .ftco-modal-icon svg{height:64px;width:auto;}
+      .modal-body p{color:#6c757d;line-height:1.7;}
+      #section-services .lead{line-height:1.17;}
+      .ftco-capacity-box{display:inline-block;background:transparent;border:1px dashed rgba(0,0,0,.25);border-radius:6px;padding:.25rem .75rem;margin-top:.5rem;}
+      #section-pricing .ftco-pricing{display:flex;flex-direction:column;height:100%;}
+      #section-pricing .ftco-pricing .ftco-capacity-wrap{margin-top:auto;margin-bottom:1rem;}
+      .ftco-counter .ftco-number-viajantes{display:block;font-size:72px;font-weight:bold;color:#4586FF;}
+      #section-pricing .col-md-12 > .row.mb-5{margin-bottom:1.5rem !important;}
+      @keyframes ftco-marquee-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+      @media (prefers-reduced-motion: reduce){.ftco-marquee-track{animation-duration:120s;}}
+
+      #section-home.ftco-slant:after{
+        width:100%;
+        left:0;
+        height:120px;
+        bottom:0;
+        transform:none;
+        background:#f2f2f2;
+        -webkit-mask-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -20 1200 160' preserveAspectRatio='none'><path d='M0,60 C153.83,10 307.67,10 461.5,60 C615.33,110 769.17,110 923,60 C1076.83,10 1230.67,10 1384.5,60 L1384.5,140 L0,140 Z' fill='white'/></svg>");
+        mask-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -20 1200 160' preserveAspectRatio='none'><path d='M0,60 C153.83,10 307.67,10 461.5,60 C615.33,110 769.17,110 923,60 C1076.83,10 1230.67,10 1384.5,60 L1384.5,140 L0,140 Z' fill='white'/></svg>");
+        -webkit-mask-size:100% 100%;
+        mask-size:100% 100%;
+        -webkit-mask-repeat:no-repeat;
+        mask-repeat:no-repeat;
+      }
+
+      @media screen and (min-width:961px){
+        #section-home .ftco-vh-100{height:48vh;min-height:0 !important;}
+      }
+
+      .ftco-marquee-item{display:inline-block;will-change:transform;}
+
+      #modalCentrosConfian h6.city-divider{border-top:1px dashed rgba(0,0,0,.12);padding-top:14px;}
+
+      footer.ftco-footer{padding:3.5em 0 3.5em 0;}
+      .ftco-footer .ftco-footer-widget ul.list-unstyled li a.py-2{padding-top:.35rem !important;padding-bottom:.35rem !important;}
+      .ftco-footer .ftco-footer-widget p{line-height:1.05;}
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/jambraoa-logo-white.svg" alt="Jambraoa Tours"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Abrir navegación">
+          <span class="oi oi-menu"></span> Menú
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#section-home" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#section-features" class="nav-link">Características</a></li>
+            <li class="nav-item"><a href="#section-services" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="#section-pricing" class="nav-link">Precios</a></li>
+            <li class="nav-item"><a href="#section-about" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="#section-contact" class="nav-link">Contacto</a></li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="https://facebook.com/JambraoaTours" target="_blank" rel="noopener" aria-label="Facebook" class="nav-link d-flex align-items-center" style="padding:0 6px;height:16px;"><span class="icon-facebook"></span></a>
+              <a href="https://instagram.com/JambraoaTours" target="_blank" rel="noopener" aria-label="Instagram" class="nav-link d-flex align-items-center" style="padding:0 6px;height:16px;"><span class="icon-instagram"></span></a>
+              <a href="https://wa.me/18293974615" target="_blank" rel="noopener" aria-label="WhatsApp" class="nav-link d-flex align-items-center" style="padding:0 6px;height:22px;"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.2-.347.223-.644.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 22c-1.66 0-3.294-.44-4.727-1.276L2 22l1.303-4.837A9.947 9.947 0 0 1 2.05 12C2.05 6.477 6.527 2 12.05 2S22 6.477 22 12s-4.477 10-9.95 10zm0-18.5A8.5 8.5 0 0 0 3.55 12c0 1.535.44 3.02 1.27 4.31l.192.297-.744 2.76 2.83-.742.287.176A8.46 8.46 0 0 0 12.05 20.5 8.5 8.5 0 0 0 20.55 12a8.5 8.5 0 0 0-8.5-8.5z"/></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="ftco-cover ftco-slant" style="background-image: url(images/bg_3.jpg);background-position:center 60%;" id="section-home">
+      <div class="container">
+        <div class="row align-items-end justify-content-center text-center ftco-vh-100">
+          <div class="col-md-10" style="padding-bottom:260px;">
+            <div class="ftco-marquee">
+              <div class="ftco-marquee-track">
+                <span class="ftco-marquee-group">
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                </span>
+                <span class="ftco-marquee-group" aria-hidden="true">
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Excursiones<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Educativas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Ecoturísticas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Familiares<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Empresariales<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Team Builder<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Acampadas<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Senderismo<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Resorts<span class="dot">•</span></span>
+                  <span class="ftco-marquee-item">Viajes Internacionales<span class="dot">•</span></span>
+                </span>
+              </div>
+            </div>
+            <p class="ftco-hero-cta"><a href="#section-contact" class="btn btn-primary ftco-animate">Comenzar</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light  ftco-slant ftco-slant-white" id="section-features">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Nuestras Increíbles Características</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">Diseñamos experiencias de viaje a la medida que fusionan comodidad, autenticidad y descubrimiento en cada destino.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-flexibilidad"><svg class="text-muted" style="height:56px;width:83px" xmlns="http://www.w3.org/2000/svg" viewBox="231.207001 46.791473 30.391998 20.506744"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M242.62677,-58.806618C242.450317,-59.089165,241.736969,-59.654789,241.04155,-60.063564C239.828003,-60.776894,239.622803,-60.808914,235.940216,-60.859539C232.360382,-60.908752,232.07225,-60.950611,231.640137,-61.484249C231.010101,-62.26231,231.058197,-62.888443,231.815628,-63.769012L232.454269,-64.511475L236.248016,-64.499199C240.556931,-64.48526,242.139313,-64.062775,244.038269,-62.419243C245.009354,-61.578781,245.044312,-61.497948,244.637299,-61.034424C244.399551,-60.763687,243.950592,-60.036083,243.639587,-59.417534C243.328598,-58.798985,243.04567,-58.2929,243.010864,-58.2929C242.976059,-58.2929,242.803223,-58.524071,242.62677,-58.806618z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M231.826508,-49.945332C231.051483,-50.72036,231.003159,-51.404091,231.665604,-52.222183C232.130096,-52.795795,232.336014,-52.826698,235.833374,-52.847664C239.074615,-52.867096,239.638519,-52.937737,240.571014,-53.441162C242.227631,-54.335518,243.251038,-55.601357,244.036438,-57.727573C245.536621,-61.78875,248.758347,-64.107971,253.206619,-64.328903L255.522049,-64.443901L255.522049,-65.871056L255.522049,-67.298218L258.565186,-65.012459C260.238892,-63.755295,261.60379,-62.651958,261.598267,-62.560608C261.592743,-62.469254,260.253113,-61.405148,258.621277,-60.195927L255.654358,-57.997341L255.574371,-59.335911L255.494385,-60.67448L253.607117,-60.67448C250.377518,-60.67448,248.483673,-59.312393,247.335693,-56.163944C246.176834,-52.985649,244.220093,-50.916054,241.363495,-49.84726C240.127441,-49.384796,239.291443,-49.295807,236.182816,-49.295807C232.600052,-49.295807,232.4543,-49.317535,231.826508,-49.945332z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M255.522049,-47.922256L255.522049,-49.221207L253.338928,-49.363201C250.861786,-49.524319,248.662125,-50.253983,247.349136,-51.350121L246.464584,-52.088577L247.378296,-53.737137C248.276016,-55.356857,248.300323,-55.376511,248.767273,-54.860535C249.754318,-53.769855,251.803589,-53.000492,253.721664,-53.000492L255.522049,-53.000492L255.522049,-54.460018L255.522049,-55.919548L258.565186,-53.633789C260.238892,-52.376625,261.604126,-51.273285,261.598999,-51.181934C261.590546,-51.03154,256.735443,-47.341419,255.879623,-46.834923C255.599091,-46.668907,255.522049,-46.903198,255.522049,-47.922256z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Flexibilidad</h5>
+                <p class="mb-5">Tras una consulta, seleccionamos destinos, alojamientos y actividades que se ajustan a tu ritmo y nivel de aventura.</p>
+                <p class="mb-0"><a href="#modalFlexibilidad" data-toggle="modal" data-target="#modalFlexibilidad" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-experiencias"><svg class="text-muted" style="height:56px;width:53px" xmlns="http://www.w3.org/2000/svg" viewBox="163.728516 44.669735 33.096405 35.227299"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M179.520508,-57.484596C177.897827,-57.658833,176.431931,-58.051941,175.315384,-58.612282C172.623154,-59.963371,170.587585,-62.296555,169.6474,-65.108994C169.23851,-66.332123,169.093796,-67.269348,169.093796,-68.694267C169.093796,-70.57151,169.424026,-72.040955,170.200211,-73.617401C173.203506,-79.717186,180.835037,-81.768028,186.536224,-78.007431C187.375687,-77.453697,189.009079,-75.83094,189.548523,-75.014732C190.441376,-73.663811,191.064056,-72.139847,191.326523,-70.663231C191.52562,-69.543137,191.507813,-67.611069,191.288483,-66.534744C190.976257,-65.002647,190.468826,-63.764233,189.642944,-62.518761C187.623505,-59.473297,184.385574,-57.645317,180.7388,-57.491898C180.230484,-57.470516,179.682251,-57.467228,179.520508,-57.484596zM181.410965,-59.209076C183.435913,-59.457222,185.327667,-60.347767,186.812744,-61.751953C189.865768,-64.638695,190.694305,-69.211281,188.836334,-72.919937C188.432312,-73.726395,188.481476,-73.717941,187.810104,-73.096359C186.769684,-72.133095,185.087784,-71.118675,183.981613,-70.787254C183.792358,-70.730553,183.637512,-70.66774,183.637512,-70.647659C183.637512,-70.627586,183.847931,-70.378647,184.105103,-70.094452C185.022095,-69.081146,185.442261,-67.876968,185.383209,-66.431442C185.311035,-64.664642,184.515167,-63.262688,183.044861,-62.312386C181.806488,-61.511986,180.11972,-61.291534,178.722321,-61.747452C177.173325,-62.252823,176.023743,-63.34874,175.433167,-64.883026C175.139725,-65.645355,175.062698,-67.035965,175.268494,-67.855667C175.469803,-68.657448,175.918655,-69.509201,176.448288,-70.094452C176.70546,-70.378647,176.915878,-70.627586,176.915878,-70.647659C176.915878,-70.66774,176.761032,-70.730553,176.571777,-70.787254C175.465607,-71.118675,173.783691,-72.133095,172.743271,-73.096359C172.079651,-73.710777,172.115509,-73.714211,171.758011,-73.001999C170.666855,-70.828224,170.439789,-68.303711,171.127274,-65.989532C172.452682,-61.528027,176.822571,-58.646782,181.410965,-59.209076z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M191.398849,-49.930084C191.066498,-49.998127,190.884644,-50.332005,190.434189,-51.701126L189.984985,-53.06646L188.572983,-53.06646C187.563995,-53.06646,187.08194,-53.09948,186.884079,-53.182152C186.524948,-53.332207,186.354279,-53.718048,186.460098,-54.140633C186.526215,-54.404617,186.682114,-54.550056,187.645935,-55.24688C188.256271,-55.688148,188.799469,-56.093307,188.853058,-56.147232C188.926987,-56.221657,188.846848,-56.569099,188.520538,-57.58897C188.284073,-58.327995,188.090607,-59.033512,188.090607,-59.156788C188.090607,-59.507828,188.507721,-59.872116,188.909683,-59.872116C189.192505,-59.872116,189.395157,-59.756676,190.384598,-59.031914C191.015472,-58.569801,191.574051,-58.191708,191.62587,-58.191708C191.677689,-58.191708,192.234192,-58.569801,192.862534,-59.031914C193.846527,-59.755577,194.050217,-59.872116,194.331055,-59.872116C194.742371,-59.872116,195.148315,-59.507652,195.148315,-59.138359C195.148315,-59.004951,194.959274,-58.306507,194.72821,-57.586266C194.497162,-56.86602,194.308121,-56.255951,194.308121,-56.230553C194.308121,-56.205154,194.839417,-55.798069,195.48877,-55.325916C196.138123,-54.85376,196.705261,-54.400475,196.749084,-54.318611C196.856216,-54.118408,196.849548,-53.792213,196.733063,-53.536575C196.552948,-53.141254,196.224213,-53.06646,194.666962,-53.06646L193.244766,-53.06646L192.807007,-51.691765C192.519913,-50.790176,192.305298,-50.257374,192.183411,-50.143616C191.981064,-49.954765,191.679352,-49.87265,191.398849,-49.930084z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M168.68187,-49.932121C168.328018,-50.063988,168.170181,-50.360886,167.746384,-51.691765L167.308624,-53.06646L165.886429,-53.06646C164.329163,-53.06646,164.000443,-53.141254,163.820313,-53.536575C163.702621,-53.794888,163.697418,-54.118874,163.807648,-54.324852C163.853302,-54.410149,164.420441,-54.86306,165.067963,-55.331314C165.715485,-55.799576,166.24527,-56.203854,166.24527,-56.229713C166.24527,-56.255569,166.056229,-56.86602,165.825165,-57.586266C165.594116,-58.306507,165.40506,-59.004951,165.40506,-59.138359C165.40506,-59.508698,165.810944,-59.872116,166.224564,-59.872116C166.508896,-59.872116,166.703888,-59.759972,167.680374,-59.034836C168.300507,-58.574333,168.853882,-58.196236,168.91008,-58.194633C168.966263,-58.193024,169.530838,-58.569801,170.164673,-59.031914C171.156601,-59.755096,171.362686,-59.872116,171.644348,-59.872116C172.045654,-59.872116,172.462784,-59.50753,172.462784,-59.156788C172.462784,-59.033512,172.269318,-58.327995,172.032852,-57.58897C171.751221,-56.708748,171.631409,-56.216801,171.685516,-56.162701C171.730927,-56.117279,172.274139,-55.711147,172.892639,-55.260185C173.863831,-54.552063,174.027542,-54.399113,174.093292,-54.138474C174.196533,-53.729111,174.038239,-53.367599,173.681641,-53.198383C173.463104,-53.094681,173.100128,-53.06646,171.985123,-53.06646L170.56662,-53.06646L170.10907,-51.67664C169.836914,-50.849976,169.582733,-50.223816,169.481766,-50.131332C169.296158,-49.961311,168.880981,-49.857914,168.68187,-49.932121z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M180.026367,-44.758179C179.911789,-44.803894,179.757416,-44.896152,179.683334,-44.963207C179.609238,-45.030254,179.287979,-45.897877,178.969406,-46.891254L178.390198,-48.697392L176.439423,-48.697392C174.53688,-48.697392,174.483276,-48.702065,174.271072,-48.886436C173.991531,-49.12933,173.901962,-49.623417,174.086426,-49.904953C174.159424,-50.016365,174.882629,-50.588623,175.693542,-51.176636C176.504456,-51.764648,177.167938,-52.283447,177.167938,-52.329514C177.167938,-52.37558,176.92218,-53.169479,176.621796,-54.093735C176.321426,-55.01799,176.075668,-55.878231,176.075668,-56.005386C176.075668,-56.511467,176.730835,-56.912926,177.204529,-56.697098C177.309998,-56.64904,178.021744,-56.152771,178.786179,-55.594276C179.550629,-55.035778,180.221359,-54.578827,180.276688,-54.578827C180.332031,-54.578827,181.002762,-55.035778,181.767212,-55.594276C182.531647,-56.152771,183.243393,-56.64904,183.348862,-56.697098C183.822556,-56.912926,184.477722,-56.511467,184.477722,-56.005386C184.477722,-55.878231,184.231964,-55.01799,183.93158,-54.093735C183.63121,-53.169479,183.385452,-52.375488,183.385452,-52.329308C183.385452,-52.283127,184.047485,-51.766541,184.856628,-51.181339C185.665771,-50.596138,186.388977,-50.023972,186.463745,-49.909859C186.651428,-49.623405,186.564209,-49.131374,186.282318,-48.886436C186.070129,-48.702072,186.016449,-48.697392,184.115341,-48.697392L182.165955,-48.697392L181.627869,-46.995975C181.331924,-46.060196,181.036224,-45.206333,180.970779,-45.098499C180.87709,-44.944164,180.376892,-44.643108,180.258392,-44.669735C180.245346,-44.672661,180.14093,-44.712463,180.026367,-44.758179z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Experiencias</h5>
+                <p class="mb-5">Diseñamos recorridos que te conectan con la comunidad local—clases, talleres y visitas guiadas exclusivas—para que vivas el destino como un residente más.</p>
+                <p class="mb-0"><a href="#modalExperiencias" data-toggle="modal" data-target="#modalExperiencias" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-teambuilder"><svg class="text-muted" style="height:56px;width:64px" xmlns="http://www.w3.org/2000/svg" viewBox="404.745392 57.203964 113.209869 99.754715"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M490.324646,-57.627678C489.171997,-58.003464,488.251587,-58.798431,483.179932,-63.798492L477.358276,-69.537949L476.299805,-69.143471C474.836334,-68.598068,470.101379,-68.587791,468.361176,-69.126236C466.300293,-69.763924,465.169983,-70.289055,463.564392,-71.354767C462.17511,-72.276932,462.027802,-72.31823,461.251587,-72.003166C456.512085,-70.079407,451.879456,-69.966141,446.824341,-71.650436L444.869385,-72.301796L439.414978,-66.875687C436.415039,-63.891327,433.55423,-61.246223,433.057617,-60.997681C432.561005,-60.74913,431.460297,-60.482819,430.611572,-60.405853C427.603027,-60.133049,427.703979,-60.055191,416.160217,-71.551422C406.8508,-80.822525,405.714661,-82.045547,405.244629,-83.301826C404.603699,-85.014877,404.581451,-86.299095,405.163055,-88.010963C405.54248,-89.127739,406.449615,-90.170219,411.478821,-95.269005L417.351471,-101.222961L417.49057,-103.357224C417.647705,-105.768539,418.345642,-107.671822,419.744934,-109.504997L420.63562,-110.671844L418.637848,-112.724716C416.046692,-115.38739,415.04071,-117.403656,415.040405,-119.934921C415.039856,-124.500214,418.39624,-128.340302,422.782715,-128.79303L424.236145,-128.943039L424.391296,-130.25293C424.839142,-134.034439,427.883209,-137.434235,431.328949,-138.001343C433.941925,-138.431396,433.743713,-138.28064,433.895386,-139.953445C433.973297,-140.812393,434.325165,-142.053589,434.701141,-142.795517C435.354401,-144.084671,437.145996,-145.973389,438.302887,-146.592545C439.234406,-147.09108,441.299469,-147.657837,442.19574,-147.66095C443.00531,-147.663757,443.025024,-147.694122,443.195557,-149.201553C443.749268,-154.095581,448.397003,-157.604523,453.352722,-156.869965C455.44165,-156.560333,456.750641,-155.778732,459.165619,-153.399063L461.348755,-151.247879L463.53186,-153.399063C464.732574,-154.582214,466.209534,-155.796692,466.813995,-156.097885C469.079132,-157.226593,472.420166,-157.233414,474.614807,-156.113785C477.212982,-154.7883,479.172791,-151.95697,479.519714,-149.027725L479.673279,-147.731079L481.075958,-147.586304C485.065735,-147.17453,488.290741,-143.94429,488.76825,-139.881592C488.958527,-138.262466,488.866486,-138.332855,491.208954,-138.014832C494.713623,-137.539017,497.851898,-134.088837,498.311737,-130.206055C498.463074,-128.928452,498.501892,-128.875671,499.29245,-128.87291C500.38089,-128.869125,502.4729,-128.221863,503.551727,-127.555115C507.192383,-125.305054,508.701721,-120.35688,506.902191,-116.570938C506.487122,-115.697685,505.582123,-114.356964,504.891083,-113.591553L503.634613,-112.19989L504.702454,-110.01918C505.289795,-108.819786,505.915833,-107.302612,506.093689,-106.647675C506.542542,-104.995071,506.54129,-100.998772,506.0914,-99.163506L505.716278,-97.633286L511.410675,-91.886444C516.31134,-86.940636,517.165894,-85.957832,517.54126,-84.835518C518.091675,-83.190048,518.093079,-81.952759,517.546448,-80.298943C517.160156,-79.130318,516.026306,-77.906723,506.630859,-68.519516C496.76709,-58.664429,496.062256,-58.018112,494.726654,-57.603928C492.985992,-57.064133,492.037598,-57.069244,490.324646,-57.627678zM472.654816,-143.959137C473.601807,-144.905151,474.541412,-146.062347,474.742798,-146.530685C475.835022,-149.070465,474.274414,-151.959198,471.492615,-152.546906C469.910797,-152.881104,468.595703,-152.270493,466.434387,-150.198303L464.419586,-148.266571L466.574341,-146.047241C467.761353,-144.824646,468.993652,-143.263123,469.318115,-142.570374C469.997009,-141.120911,469.682739,-140.990128,472.654816,-143.959137zM435.436676,-106.984749C437.38562,-108.298141,438.077271,-110.580681,437.130676,-112.575424C436.909454,-113.041626,434.319489,-115.818733,431.375183,-118.746765C425.613647,-124.476501,425.385559,-124.627762,422.99057,-124.306519C420.272095,-123.941895,418.590393,-120.586182,419.893494,-118.126587C420.335327,-117.292648,430.459473,-107.151848,431.314331,-106.686951C432.274139,-106.165009,434.453918,-106.322472,435.436676,-106.984749zM454.224731,-125.772789C456.243378,-127.133163,456.878021,-129.408722,455.812622,-131.46637C455.162964,-132.721008,445.318512,-142.508835,444.329651,-142.883224C442.49118,-143.579315,439.931549,-142.847656,438.946655,-141.344528C438.276581,-140.321838,438.04953,-138.92572,438.360535,-137.740555C438.588104,-136.873474,439.579102,-135.731674,443.841125,-131.426041C446.702637,-128.535217,449.401123,-125.945694,449.837769,-125.671539C450.984253,-124.951653,453.077942,-124.999969,454.224731,-125.772789zM444.242859,-116.00882C445.41333,-116.497864,446.722778,-118.141037,446.932831,-119.384308C447.268738,-121.372635,446.811096,-122.034775,441.1521,-127.74791C437.117889,-131.820709,435.576782,-133.206635,434.71698,-133.534988C432.63736,-134.329208,430.31076,-133.416275,429.34845,-131.428452C428.709137,-130.107803,428.652527,-128.934509,429.170563,-127.742645C429.691559,-126.54393,440.126678,-116.219421,441.115601,-115.924179C442.283783,-115.575424,443.26947,-115.602104,444.242859,-116.00882zM463.030914,-134.79686C464.146606,-135.263016,465.487854,-136.887589,465.702759,-138.033051C466.092468,-140.110458,465.618896,-140.82074,460.196198,-146.292068C457.409882,-149.103363,454.71759,-151.659317,454.213318,-151.971954C452.968201,-152.743912,450.939056,-152.741928,449.686035,-151.967514C447.890961,-150.858093,447.128082,-148.470856,447.948608,-146.530685C448.395172,-145.474762,458.539368,-135.293106,459.628723,-134.807449C460.662415,-134.346588,461.943726,-134.342606,463.030914,-134.79686zM503.485626,-71.655533C512.702515,-80.872437,513.478943,-81.718529,513.478943,-82.545769C513.478943,-83.326813,513.137817,-83.787865,510.838806,-86.11425L508.1987,-88.785805L502.434906,-83.030312C497.022583,-77.625771,496.611938,-77.274826,495.700226,-77.274826C494.525635,-77.274826,493.632416,-78.232315,493.632416,-79.491425C493.632416,-80.209373,494.36026,-81.041946,499.376526,-86.062111L505.120636,-91.810669L503.118591,-93.870613C502.017456,-95.003586,501.033569,-96.193993,500.93219,-96.515968C500.818787,-96.876114,501.008057,-97.925087,501.424042,-99.241989C502.253601,-101.868011,502.292114,-103.93782,501.55307,-106.179031C500.469727,-109.464455,501.437225,-110.063072,490.917053,-99.598297C481.148834,-89.881546,480.452484,-89.308044,476.961334,-88.104774C474.69809,-87.324722,470.450623,-87.255554,468.096558,-87.960419C465.057037,-88.870529,463.529755,-89.907425,459.621857,-93.713928C455.670654,-97.562622,454.677399,-98.163483,452.840271,-97.81636C450.06012,-97.291069,448.420166,-94.296722,449.518921,-91.75209C449.894531,-90.882195,464.699219,-75.961174,466.244202,-74.895348C467.692383,-73.896347,469.608917,-73.271263,471.723694,-73.108231C473.168427,-72.996864,473.921631,-73.103355,475.773926,-73.680855C477.136902,-74.10582,478.282166,-74.31942,478.629974,-74.213554C478.949341,-74.116341,482.016968,-71.252525,485.44696,-67.84951C491.141968,-62.199295,491.761841,-61.662231,492.58783,-61.662231C493.425018,-61.662231,494.235779,-62.405685,503.485626,-71.655533zM488.055023,-71.697441C487.112579,-72.6399,487.06546,-73.554047,487.908783,-74.534477C489.226959,-76.06694,491.621307,-75.170677,491.621307,-73.144798C491.621307,-72.418274,491.440308,-72.022789,490.892059,-71.551201C489.911621,-70.70787,488.997498,-70.75499,488.055023,-71.697441zM437.128723,-70.90535C441.204895,-74.964211,443.474884,-77.035416,443.985352,-77.161491C444.526031,-77.295029,445.143036,-77.17453,446.102295,-76.748039C449.44281,-75.262871,450.269623,-75.066727,453.277832,-75.045799C455.049286,-75.03347,456.688171,-75.170586,457.464783,-75.396088L458.740936,-75.766632L452.51767,-82.011597C445.225769,-89.328911,444.80777,-89.95491,444.814148,-93.548973C444.818726,-96.144829,445.464111,-97.740662,447.240845,-99.549522C449.930359,-102.287682,453.781586,-103.015831,457.175171,-101.427788C458.54483,-100.78685,459.614288,-99.922226,462.310059,-97.276451C464.974976,-94.660927,466.121613,-93.730942,467.58609,-92.997292C470.752228,-91.411133,474.160339,-91.481041,477.614929,-93.202988C478.822083,-93.80471,502.146545,-116.882828,502.804565,-118.126587C503.786133,-119.981934,502.893127,-122.907364,501.045898,-123.887833C500.021423,-124.43161,498.29425,-124.524826,497.155853,-124.097794C496.746155,-123.944107,494.022705,-121.443451,491.10379,-118.540771C486.173157,-113.637573,485.728973,-113.263184,484.84259,-113.263184C484.102081,-113.263184,483.735168,-113.445419,483.20343,-114.077347C482.407227,-115.023575,482.352234,-115.540665,482.951477,-116.4459C483.189697,-116.805756,485.625092,-119.362679,488.363464,-122.12796C491.101837,-124.893242,493.467133,-127.490967,493.61969,-127.900681C494.569061,-130.450623,492.904602,-133.263428,490.143433,-133.775253C488.194458,-134.13652,487.503876,-133.660767,481.856812,-128.066437C478.636536,-124.876236,476.289124,-122.756195,475.861359,-122.651672C474.531158,-122.32666,473.2789,-123.401047,473.265076,-124.879173C473.257416,-125.695847,473.725739,-126.252411,478.386292,-130.965439C481.207611,-133.818512,483.708282,-136.533936,483.943329,-136.99971C484.480072,-138.063324,484.492249,-139.786041,483.970764,-140.884995C483.111542,-142.695679,480.410919,-143.658829,478.369446,-142.88266C477.960632,-142.727234,475.124756,-140.121689,472.067505,-137.092575C468.879761,-133.934158,466.0448,-131.351563,465.420868,-131.037613C464.822449,-130.736496,463.556824,-130.347153,462.608337,-130.172379L460.883789,-129.854614L460.724243,-128.507523C460.636505,-127.766617,460.200256,-126.42012,459.754822,-125.51532C458.415649,-122.795074,456.02533,-121.112427,452.956085,-120.729355L451.425476,-120.53833L451.245972,-118.91201C450.817841,-115.033432,447.920227,-112.081375,443.906921,-111.435043C442.982422,-111.286156,442.204926,-111.130493,442.179199,-111.089127C442.153442,-111.04776,442.005829,-110.236664,441.851135,-109.286697C441.161957,-105.054138,437.464172,-101.884506,433.215515,-101.884506C430.499969,-101.884506,428.199371,-103.059189,425.500977,-105.823502C424.632294,-106.713425,423.833527,-107.441536,423.725952,-107.441536C423.618378,-107.441536,423.197876,-106.875916,422.791504,-106.184586C422.116058,-105.035561,422.0513,-104.693787,422.036957,-102.203903L422.021301,-99.480171L418.997131,-96.447388L415.972931,-93.414597L421.725159,-87.657928C426.979614,-82.399384,427.477356,-81.822792,427.477356,-80.994362C427.477356,-79.745644,426.609619,-78.862549,425.382629,-78.862549C424.506042,-78.862549,424.026978,-79.273499,418.673187,-84.618034L412.907715,-90.373528L411.063141,-88.486359C408.129028,-85.484505,407.479218,-86.574226,419.203278,-74.835175C428.528137,-65.49839,429.249054,-64.837669,430.111603,-64.837669C430.962616,-64.837669,431.513977,-65.314438,437.128723,-70.90535zM430.323547,-73.03495C429.504211,-73.679413,429.304443,-74.593681,429.750946,-75.655533C430.31778,-77.003693,432.18631,-77.217926,433.232849,-76.054741C434.218567,-74.959114,433.935364,-73.536758,432.588684,-72.819496C431.754211,-72.375053,431.081055,-72.439079,430.323547,-73.03495z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Team Builder</h5>
+                <p class="mb-5">Ofrecemos viajes de incentivo, conferencias y retiros empresariales adaptados a los objetivos de tu organización, integrando actividades de team building y espacios de networking.</p>
+                <p class="mb-0"><a href="#modalTeamBuilder" data-toggle="modal" data-target="#modalTeamBuilder" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-trayectoria"><svg class="text-muted" style="height:56px;width:77px" xmlns="http://www.w3.org/2000/svg" viewBox="218.179993 184.796295 84.363159 61.116058"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M301.544586,-184.986313C300.557983,-185.269684,298.254364,-185.890106,292.812134,-187.338104C271.923248,-192.895935,261.718842,-195.647293,261.587189,-195.757065C261.395569,-195.91684,263.77478,-197.923309,264.166962,-197.932678C264.348907,-197.937027,264.497742,-198.033981,264.497742,-198.148132C264.497742,-198.262299,266.397888,-199.780548,268.720245,-201.522049C271.042633,-203.263535,272.947876,-204.797028,272.954163,-204.92981C272.987122,-205.626236,268.139465,-212.75177,265.017181,-216.596313C255.343109,-228.508194,240.836411,-237.98143,226.921661,-241.473633C224.768112,-242.014114,219.559769,-242.908798,218.419861,-242.934067C216.809006,-242.969788,223.632553,-244.834137,227.71553,-245.473862C231.483124,-246.064178,239.52269,-246.057312,243.460434,-245.460419C252.669327,-244.064514,261.058868,-240.98407,269.287781,-235.977234C272.291748,-234.149475,278.172913,-229.840576,280.771881,-227.563248C282.961548,-225.644592,287.019379,-221.950211,289.079681,-219.999542L290.795563,-218.375L292.265442,-219.470306C293.073853,-220.072723,295.700745,-222.08873,298.103027,-223.950317L302.470764,-227.335037L302.534058,-210.719315C302.568848,-201.580658,302.509308,-192.009445,302.401733,-189.449951L302.206116,-184.796295L301.544586,-184.986313z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Trayectoria</h5>
+                <p class="mb-5">Con más de <strong>16 años</strong> de trayectoria en la planificación de viajes personalizados en República Dominicana, nuestro equipo combina expertos en turismo, logística y experiencia.</p>
+                <p class="mb-0"><a href="#modalTrayectoria" data-toggle="modal" data-target="#modalTrayectoria" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-confianza"><svg class="text-muted" style="height:56px;width:56px" xmlns="http://www.w3.org/2000/svg" viewBox="305.627441 262.282166 34.295166 34.394836"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M333.241211,-282.637543C330.892761,-284.958191,328.640869,-286.982544,328.237,-287.136108C327.83313,-287.289642,325.655975,-287.415283,323.398895,-287.415283C319.633209,-287.415283,319.302399,-287.377136,319.383636,-286.952179C319.461823,-286.543243,319.931,-286.473633,323.396545,-286.356812C327.123383,-286.23114,327.346344,-286.193054,327.825958,-285.599762C328.656677,-284.572235,328.581573,-283.300629,327.640167,-282.453644C326.996613,-281.874664,326.819489,-281.858246,321.210999,-281.858246C317.541107,-281.858246,315.116455,-281.969543,314.544067,-282.164246C313.226379,-282.612518,305.535309,-287.699432,305.627441,-288.061737C305.801605,-288.746582,310.436798,-296.677002,310.662933,-296.677002C310.796753,-296.677002,311.581909,-296.16394,312.407715,-295.536896C315.705658,-293.032684,314.997437,-293.245667,321.879913,-292.688568C325.312256,-292.410767,328.587677,-292.043488,329.15863,-291.872437C329.729553,-291.701385,330.607361,-291.194153,331.109283,-290.7453C332.629456,-289.385803,339.715454,-280.974457,339.879486,-280.334747C340.118866,-279.401154,339.329132,-278.418182,338.339661,-278.418182C337.624512,-278.418182,336.926727,-278.995667,333.241211,-282.637543z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M315.597382,-263.015747C313.505981,-264.108307,312.581696,-265.709656,312.599243,-268.209961C312.61087,-269.866211,312.733185,-270.31192,313.657715,-272.066498C314.363098,-273.405151,315.351013,-274.696075,316.695374,-276.035797C318.6008,-277.934662,322.112854,-280.535156,322.771851,-280.535156C323.398712,-280.535156,327.188141,-277.708496,328.998352,-275.890625C330.194275,-274.689636,331.22699,-273.322144,331.896027,-272.053619C332.811371,-270.318146,332.937134,-269.861328,332.9487,-268.230316C332.959808,-266.667694,332.846924,-266.182465,332.227112,-265.128052C330.422974,-262.058929,326.349243,-261.431976,323.544678,-263.79184L322.748596,-264.461731L322.165894,-263.914703C321.268524,-263.072296,319.32016,-262.288605,318.107178,-262.282166C317.414001,-262.278473,316.493835,-262.547424,315.597382,-263.015747zM318.672363,-265.170349C318.672363,-265.379425,318.30542,-265.645538,317.856964,-265.761749C316.880341,-266.014832,316.200653,-266.710571,315.92569,-267.7388C315.681732,-268.650909,315.002228,-268.739044,314.879822,-267.87442C314.7453,-266.924255,315.365204,-265.709167,316.269684,-265.150055C317.199341,-264.575378,318.672363,-264.58783,318.672363,-265.170349z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Confianza</h5>
+                <p class="mb-5">Miles de personas, familias, colegios y empresas han confiado en la creación de itinerarios únicos, cuidando cada detalle desde la asesoría inicial hasta el regreso a casa.</p>
+                <p class="mb-0"><a href="#modalConfianza" data-toggle="modal" data-target="#modalConfianza" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="media d-block mb-4 text-center ftco-media p-md-5 p-4 ftco-animate">
+              <div class="ftco-icon mb-3" id="icon-logistica"><svg class="text-muted" style="height:56px;width:58px" xmlns="http://www.w3.org/2000/svg" viewBox="65.049843 143.817810 112.715034 108.733093"><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M145.658936,-243.468018C144.392151,-244.464478,144.969849,-246.350555,146.672745,-246.777954C147.039063,-246.869904,148.280273,-246.902359,149.431015,-246.850098C151.885468,-246.738647,152.635681,-246.278,152.635681,-244.882416C152.635681,-243.392487,151.711212,-242.919571,148.798676,-242.919571C146.728333,-242.919571,146.249924,-243.003143,145.658936,-243.468018z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M133.893768,-243.532028C133.152344,-244.321228,133.143402,-245.590012,133.874603,-246.251724C134.297729,-246.634644,134.931427,-246.777832,136.523056,-246.850098C138.957642,-246.960663,139.750549,-246.807617,140.469879,-246.088287C141.178818,-245.379349,141.127075,-244.353317,140.342865,-243.569092C139.740982,-242.967209,139.501755,-242.919571,137.081238,-242.919571C134.692978,-242.919571,134.41983,-242.972061,133.893768,-243.532028z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M122.388138,-243.213593C121.081757,-243.973587,121.338409,-246.098236,122.798065,-246.607086C123.906601,-246.993515,127.218063,-246.955109,128.026001,-246.546448C128.389847,-246.362411,128.841232,-245.891312,129.029083,-245.499542C129.314804,-244.903671,129.305588,-244.661499,128.972717,-244.017792C128.75386,-243.594589,128.38205,-243.174362,128.146454,-243.083954C127.438889,-242.812439,122.902145,-242.914581,122.388138,-243.213593z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M112.453995,-243.38266C111.559662,-244.13942,111.479691,-245.10907,112.238831,-245.991623C112.838501,-246.688782,113.048805,-246.756561,114.611969,-246.756561C116.666656,-246.756561,117.441177,-246.2435,117.441177,-244.882416C117.441177,-243.584106,116.453537,-242.919571,114.523987,-242.919571C113.458679,-242.919571,112.836876,-243.058685,112.453995,-243.38266z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M160.177353,-242.445465C157.440643,-243.001129,156.432526,-243.750229,156.729233,-245.007614C157.022919,-246.252121,157.861664,-246.704865,159.514526,-246.511093C163.543549,-246.038742,165.198608,-244.614914,163.890137,-242.746811C163.328751,-241.945328,162.837128,-241.905411,160.177353,-242.445465z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M94.734459,-238.32486C92.785194,-241.601303,91.889542,-242.760529,90.74794,-243.484512C89.26799,-244.423065,88.080978,-244.768509,86.329285,-244.770432C83.212654,-244.773865,81.029549,-243.262054,78.9356,-239.650299C77.976761,-237.996429,77.470581,-237.37233,77.084732,-237.36821C75.964439,-237.356262,71.804276,-238.69043,69.679001,-239.74324C66.049919,-241.541,64.413925,-243.839813,65.402748,-245.751984C68.208267,-251.177261,83.781372,-254.172653,96.008858,-251.63887C102.24855,-250.345871,107.34761,-247.482971,107.701157,-245.074142C108.116409,-242.244858,104.465576,-239.541412,97.832306,-237.766235L95.446632,-237.127777L94.734459,-238.32486z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M171.107727,-235.462646C170.478363,-235.715164,167.189789,-239.41684,167.189789,-239.872757C167.189789,-240.603607,167.785843,-241.541962,168.439178,-241.839645C169.422028,-242.287445,170.732819,-241.528839,172.407928,-239.54277C173.986176,-237.671539,174.147141,-236.886475,173.155777,-235.895111C172.505066,-235.2444,171.945953,-235.126343,171.107727,-235.462646z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M174.948761,-224.70491C174.233948,-225.057693,173.955658,-225.80574,173.548309,-228.469238C173.252075,-230.406082,173.266129,-230.607742,173.741852,-231.247742C174.423477,-232.164734,175.877319,-232.321564,176.572784,-231.553101C177.063477,-231.01088,177.74649,-228.177872,177.764877,-226.608582C177.782623,-225.092239,176.255585,-224.059967,174.948761,-224.70491z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M171.921509,-213.548492C171.685883,-213.686157,171.349976,-214.144394,171.175003,-214.566803C170.885437,-215.265869,170.96608,-215.552216,172.073608,-217.757431C173.438141,-220.47438,174.055008,-220.981079,175.346771,-220.446014C176.921509,-219.793732,176.909439,-218.652664,175.294006,-215.464783C174.308868,-213.520691,173.12265,-212.84668,171.921509,-213.548492z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M163.123871,-206.156555C162.353394,-206.762619,162.169601,-208.101074,162.757401,-208.825363C163.360474,-209.568481,167.18692,-211.466034,167.907959,-211.379578C168.841599,-211.267624,169.690735,-210.088959,169.470337,-209.210846C169.240204,-208.293976,168.511261,-207.664215,166.389648,-206.549316C164.30368,-205.453186,164.055939,-205.423386,163.123871,-206.156555z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M151.432861,-204.669922C150.653839,-205.448944,150.601349,-206.383087,151.28891,-207.232666C151.745285,-207.7966,152.042023,-207.866333,154.339127,-207.949326C156.373688,-208.022842,157.017838,-207.95343,157.55249,-207.603119C158.394043,-207.051712,158.724762,-206.191711,158.413147,-205.365051C157.986694,-204.233795,157.438293,-204.037781,154.674469,-204.028809C152.269501,-204.020996,152.035492,-204.067291,151.432861,-204.669922z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M139.719177,-204.559937C138.866699,-205.354156,138.936493,-206.732697,139.866241,-207.46402C140.519836,-207.978149,140.852844,-208.026367,143.197754,-207.94632C145.560867,-207.865662,145.850082,-207.799301,146.308563,-207.232666C146.996017,-206.383057,146.943512,-205.448914,146.164505,-204.669922C145.562744,-204.068161,145.323166,-204.020386,142.906647,-204.020386C140.647476,-204.020386,140.220795,-204.092621,139.719177,-204.559937z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M128.351196,-204.19751C128.166214,-204.271927,127.829361,-204.691528,127.602646,-205.129959C127.272163,-205.769043,127.25058,-206.072281,127.49379,-206.659439C127.916679,-207.680389,128.778748,-207.9897,131.201447,-207.9897C132.352066,-207.9897,133.588745,-207.855164,133.949615,-207.69075C135.292236,-207.07901,135.411545,-204.980377,134.142334,-204.301102C133.620697,-204.021942,128.993301,-203.939148,128.351196,-204.19751z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M117.561462,-200.700607C116.603577,-201.658493,116.738274,-202.414307,118.176674,-204.15271C119.019424,-205.171204,121.106934,-206.666595,121.686005,-206.666595C122.546135,-206.666595,123.527451,-205.627655,123.527451,-204.716995C123.527451,-204.004242,123.205002,-203.551346,121.562881,-201.957687C119.372437,-199.831879,118.655441,-199.606628,117.561462,-200.700607z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M118.321442,-190.158325C117.193047,-191.354782,116.11808,-193.443283,116.11808,-194.439133C116.11808,-195.32135,117.0756,-196.346405,117.899681,-196.346405C118.898132,-196.346405,119.308228,-196.034927,119.946442,-194.791809C120.292046,-194.118652,120.88192,-193.157745,121.257271,-192.656464C122.147453,-191.467621,122.142319,-190.457916,121.242493,-189.750107C120.206558,-188.935242,119.363899,-189.053009,118.321442,-190.158325z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M137.720322,-187.103912C136.891235,-187.756042,136.796814,-188.863602,137.496613,-189.727814C138.4823,-190.945084,141.926666,-190.662445,142.541107,-189.313873C142.986252,-188.336914,142.919373,-187.929138,142.19519,-187.204987C141.314606,-186.324371,138.783981,-186.267212,137.720322,-187.103912z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M125.764694,-187.204987C125.038788,-187.930878,124.97345,-188.336487,125.42337,-189.323944C125.839096,-190.236359,127.211555,-190.610367,129.685593,-190.485443C132.048798,-190.366089,132.789154,-189.892242,132.789154,-188.499084C132.789154,-186.901093,132.128174,-186.55545,129.072449,-186.55545C126.602951,-186.55545,126.368095,-186.601563,125.764694,-187.204987z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M150.638489,-183.09259C149.180023,-183.929169,147.465744,-185.669617,147.066849,-186.718811C146.019302,-189.47406,147.726608,-192.394821,151.519745,-194.336578C155.538818,-196.393982,162.070251,-196.766846,166.816284,-195.209824C173.712524,-192.947372,175.901154,-187.993622,171.631317,-184.311508C170.6716,-183.483902,168.798218,-182.321533,168.424088,-182.321533C168.363647,-182.321533,167.595551,-183.601624,166.717209,-185.166199C165.838867,-186.730774,164.782104,-188.332016,164.36882,-188.724533C162.694122,-190.315125,160.033295,-190.755981,157.902954,-189.795837C156.230255,-189.041931,155.357056,-187.935623,152.891296,-183.446167C152.551559,-182.827606,152.206223,-182.322647,152.123871,-182.324005C152.041504,-182.325378,151.373093,-182.671234,150.638489,-183.09259z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M82.572845,-175.206207C77.731262,-176.01265,72.12513,-179.591034,69.132095,-183.785385C66.708221,-187.182159,65.058449,-192.081253,65.049843,-195.907898C65.042152,-199.3284,66.932991,-205.831329,70.332504,-214.075958C72.255295,-218.739166,78.920227,-232.088074,81.330032,-236.102402C83.470665,-239.668335,84.487709,-240.784149,85.6409,-240.831894C88.731194,-240.959854,88.934837,-240.750305,93.347832,-232.901367C99.233246,-222.433594,104.872787,-209.393997,106.972458,-201.39888C108.077316,-197.191818,107.968987,-193.308624,106.639542,-189.465088C103.154457,-179.389404,93.126793,-173.448273,82.572845,-175.206207zM91.298279,-181.504837C93.472679,-182.198547,96.678635,-184.300323,98.113197,-185.972595C98.700333,-186.657013,99.587723,-187.991028,100.085175,-188.937042C104.783173,-197.871262,99.991882,-208.694992,90.185295,-211.3013C88.291512,-211.804596,84.626663,-211.800446,82.633057,-211.292709C76.156876,-209.643372,71.371231,-203.845093,70.952232,-197.140259C70.493706,-189.802765,75.406136,-183.152802,82.775925,-181.134521C84.803276,-180.579315,88.963959,-180.760101,91.298279,-181.504837zM82.482758,-185.3116C80.287361,-186.236176,79.234703,-186.958267,77.851578,-188.488403C75.975945,-190.563431,75.026627,-192.798218,74.886467,-195.468567C74.694984,-199.116837,75.737854,-201.905914,78.223503,-204.393204C82.688065,-208.860687,89.487244,-209.092651,94.111298,-204.935242C96.531807,-202.758987,98.123901,-199.349258,98.123901,-196.341568C98.123901,-192.002411,95.345215,-187.669067,91.313866,-185.721359C89.701218,-184.94223,89.248276,-184.848053,86.745232,-184.771545C84.304451,-184.69696,83.786339,-184.762604,82.482758,-185.3116z"/><path transform="matrix(1,0,0,-1,0,0)" style="stroke:none;fill:currentColor;fill-rule:evenodd" d="M157.531158,-144.060425C154.849701,-144.67215,152.93631,-145.741806,150.88681,-147.774841C146.599319,-152.027924,145.771057,-156.630722,148.069565,-163.430634C149.523438,-167.73175,150.900742,-170.945145,153.727936,-176.632202C156.612167,-182.433929,158.620514,-185.742859,159.585098,-186.28244C160.235046,-186.646011,160.384613,-186.646149,161.037369,-186.283752C162.905701,-185.24646,169.75061,-171.636169,172.530075,-163.431885C174.843857,-156.602203,174.028381,-152.037857,169.732513,-147.77359C167.89621,-145.950775,166.737213,-145.237,164.244537,-144.393845C162.444031,-143.784821,159.401642,-143.633713,157.531158,-144.060425zM164.369965,-148.660309C170.885651,-151.724243,171.901703,-160.642731,166.228622,-164.974457C163.27623,-167.22876,159.366089,-167.621948,156.069458,-165.995987C152.171875,-164.073639,150.138702,-160.107376,150.824249,-155.763733C151.414459,-152.023987,154.341736,-148.881973,158.125458,-147.926941C159.85022,-147.491623,162.561935,-147.810089,164.369965,-148.660309zM157.730164,-152.167938C152.790497,-154.676605,153.832001,-161.908417,159.298065,-163.054932C160.580627,-163.323944,160.942566,-163.301178,162.038773,-162.882538C164.548386,-161.924103,166.131317,-159.719589,166.131317,-157.182922C166.131317,-155.726715,164.87561,-153.48732,163.539856,-152.561401C161.992783,-151.488968,159.411331,-151.314148,157.730164,-152.167938z"/></svg></div>
+              <div class="media-body">
+                <h5 class="mt-0">Logística</h5>
+                <p class="mb-5">Trazamos, creamos y diseñamos itinerarios que optimizan el tiempo en carretera logrando así mayor disfrute en los destinos seleccionados.</p>
+                <p class="mb-0"><a href="#modalLogistica" data-toggle="modal" data-target="#modalLogistica" class="btn btn-primary btn-sm">Ver Más</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <div class="modal fade" id="modalFlexibilidad" tabindex="-1" role="dialog" aria-labelledby="modalFlexibilidadLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-flexibilidad"></div>
+            <h4 class="mb-4" id="modalFlexibilidadLabel">Flexibilidad</h4>
+            <p class="text-left">La flexibilidad es la base de un viaje bien diseñado. En Jambraoa Tours adaptamos cada itinerario a tus preferencias, presupuesto y ritmo, ya sea que busques un viaje relajado, cultural o lleno de aventura.</p>
+            <p class="text-left">Puedes dejar en nuestras manos la organización completa o pedirnos ayuda solo con ciertos aspectos —vuelos, hospedaje o actividades— y, si tus planes cambian de último momento, ajustamos el itinerario sin complicaciones.</p>
+            <p class="text-left">Esta flexibilidad no significa improvisación: contamos con acuerdos y tarifas exclusivas con proveedores que nos permiten reorganizar tu viaje rápido y sin costos ocultos, para que la experiencia final siga siendo la que soñaste.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalExperiencias" tabindex="-1" role="dialog" aria-labelledby="modalExperienciasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-experiencias"></div>
+            <h4 class="mb-4" id="modalExperienciasLabel">Experiencias</h4>
+            <p class="text-left">El turista de hoy ya no busca solo descansar o visitar monumentos: busca experiencias auténticas que le permitan vivir el destino como un local más.</p>
+            <p class="text-left">Por eso diseñamos recorridos con clases, talleres y visitas guiadas exclusivas que te conectan con la cultura, la gastronomía y la gente de cada lugar, más allá del circuito turístico tradicional.</p>
+            <p class="text-left">Esta tendencia hacia el turismo experiencial —hiperpersonalizado y con propósito— es hoy una de las principales motivaciones de quienes viajan, y en Jambraoa Tours la convertimos en el eje central de cada itinerario.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTeamBuilder" tabindex="-1" role="dialog" aria-labelledby="modalTeamBuilderLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-teambuilder"></div>
+            <h4 class="mb-4" id="modalTeamBuilderLabel">Team Builder</h4>
+            <p class="text-left">Los viajes de incentivo bien planificados pueden aumentar la productividad de un equipo hasta un 26%, según estudios de la industria, al fortalecer la comunicación y reducir el estrés laboral.</p>
+            <p class="text-left">Diseñamos dinámicas de integración, retos al aire libre y actividades culturales que desarrollan el sentido de pertenencia y el liderazgo entre los colaboradores, en un ambiente distinto al de la oficina.</p>
+            <p class="text-left">Más allá del entretenimiento, estos viajes son una inversión estratégica: mejoran la retención de talento, reducen la rotación y refuerzan la reputación de tu empresa ante clientes y socios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTrayectoria" tabindex="-1" role="dialog" aria-labelledby="modalTrayectoriaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-trayectoria"></div>
+            <h4 class="mb-4" id="modalTrayectoriaLabel">Trayectoria</h4>
+            <p class="text-left">Con más de 16 años de trayectoria en la planificación de viajes personalizados en República Dominicana, conocemos a fondo los destinos, las mejores rutas y las opciones de alojamiento que realmente valen la pena.</p>
+            <p class="text-left">Esa experiencia se traduce en itinerarios más eficientes, menos imprevistos y acceso a tarifas y acuerdos que no siempre están disponibles para el público general.</p>
+            <p class="text-left">Nuestro equipo combina especialistas en turismo, logística y atención al cliente, lo que nos permite anticipar problemas antes de que ocurran y resolverlos rápido cuando surgen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalConfianza" tabindex="-1" role="dialog" aria-labelledby="modalConfianzaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-confianza"></div>
+            <h4 class="mb-4" id="modalConfianzaLabel">Confianza</h4>
+            <p class="text-left">Confiarle a alguien más el viaje con el que llevas meses soñando no es fácil. Por eso, desde el primer mensaje, queremos que sientas que hay alguien cuidando cada detalle como si fuera su propio viaje.</p>
+            <p class="text-left">Sabemos lo que significa esa primera salida en familia, el viaje que planeas para sorprender a quien más quieres, o esas vacaciones que llevas años posponiendo. No solo organizamos itinerarios: acompañamos ese sueño hasta que se vuelve un recuerdo.</p>
+            <p class="text-left">Miles de personas, familias, colegios y empresas nos han dejado ser parte de sus momentos más importantes, y esa confianza es la que nos hace levantarnos cada día con las ganas de cuidarte desde el primer paso hasta que regresas a casa con la sensación de haber vivido algo que valió la pena.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalLogistica" tabindex="-1" role="dialog" aria-labelledby="modalLogisticaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <div class="ftco-modal-icon mb-3" data-icon-source="icon-logistica"></div>
+            <h4 class="mb-4" id="modalLogisticaLabel">Logística</h4>
+            <p class="text-left">Una ruta bien planificada es la diferencia entre un viaje que fluye y uno lleno de tiempos muertos: por eso diseñamos cada itinerario calculando distancias, horarios y medios de transporte para aprovechar al máximo cada destino.</p>
+            <p class="text-left">Coordinamos traslados terrestres, aéreos y marítimos según lo que el viaje requiera, considerando ventanas de tiempo, capacidad de los vehículos y el número de personas del grupo.</p>
+            <p class="text-left">El resultado es menos tiempo en carretera y más tiempo disfrutando: nuestra logística está pensada para que cada traslado se sienta parte de la experiencia, no un obstáculo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-slant" id="section-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Servicios</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Desde resorts todo incluido hasta expediciones a la montaña: diseñamos cada experiencia a la medida de quienes viajan contigo, sean familias, estudiantes, empresas o amantes de la aventura.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-lg-4 mb-5 ftco-animate">
+            <figure><img src="images/Resort.jpg" alt="" class="img-fluid"></figure>
+            <div class="p-3">
+              <h3 class="h4">Resorts</h3>
+              <p class="mb-4">Seleccionamos los mejores resorts todo incluido de Punta Cana, Bávaro, Samaná y Puerto Plata, con spa, restaurantes múltiples y playa privada para que solo te preocupes por disfrutar.</p>
+              <ul class="list-unstyled ftco-list-check text-left">
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Hospedaje todo incluido con alimentos, bebidas y entretenimiento.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Acceso a spa, piscinas, deportes acuáticos y golf.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Traslados privados desde el aeropuerto incluidos.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 ftco-animate">
+            <figure><img src="images/Excursion%20ecoturistica.jpg" alt="" class="img-fluid"></figure>
+            <div class="p-3">
+              <h3 class="h4">Excursiones Ecoturísticas</h3>
+              <p class="mb-4">Te llevamos a los saltos, ríos y reservas naturales más impresionantes del país, como el Salto El Limón y el Salto Baiguate en Jarabacoa, con guías certificados.</p>
+              <ul class="list-unstyled ftco-list-check text-left">
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Rutas a cascadas, ríos y senderos con guías certificados.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Cañonismo, kayak y avistamiento de ballenas.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Transporte, seguro de accidentes disponible, además desayunos, meriendas y cenas (en caso de ser varios días).</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 ftco-animate">
+            <figure><img src="images/Viajes%20Internacionales.jpg" alt="" class="img-fluid"></figure>
+            <div class="p-3">
+              <h3 class="h4">Viajes Internacionales</h3>
+              <p class="mb-4">Gestionamos guías, hoteles, transporte y paquetes completos hacia Costa Rica, Colombia, Guatemala, Europa y el Caribe, comparando itinerarios y tarifas para conseguirte la mejor opción.</p>
+              <ul class="list-unstyled ftco-list-check text-left">
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Boletos aéreos y reservas de hotel en cualquier aerolínea.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Paquetes a Europa, Estados Unidos, el Caribe y cruceros.</span></li>
+                <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Asesoría en seguros de viaje y trámites de entrada.</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="collapse" id="masServicios">
+          <div class="row">
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Excursiones%20educativas.jpg" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Excursiones Educativas</h3>
+                <p class="mb-4">Diseñamos programas para colegios y grupos escolares que combinan historia, ecología y cultura dominicana, con actividades seguras para grupos desde 8 estudiantes.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Visitas guiadas a sitios históricos y naturales.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Actividades didácticas adaptadas por edad.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Coordinación directa con el centro educativo.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Familiares.JPG" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Familiares</h3>
+                <p class="mb-4">Creamos itinerarios pensados para todas las edades, con playas, parques y actividades que mantienen entretenidos a niños y adultos por igual.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Itinerarios adaptados a niños, adultos y abuelos.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Alojamiento y transporte familiar.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Actividades recreativas para todas las edades.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Empresariales.jpg" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Empresariales</h3>
+                <p class="mb-4">Organizamos viajes de incentivo, congresos y reuniones corporativas con logística completa —transporte, hospedaje y espacios para eventos y networking—, integrando dinámicas de team building, retos al aire libre y actividades culturales diseñadas junto a coaches especializados para fortalecer a tu equipo.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Coordinación de transporte, hospedaje y salones de eventos.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Programas de incentivo y viajes de premiación.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Atención personalizada para grupos corporativos.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Acampadas.jpg" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Acampadas</h3>
+                <p class="mb-4">Vive la montaña dominicana en Jarabacoa y Constanza, con acampadas en Valle Nuevo, La Ciénega y rutas hacia el Pico Duarte bajo guía de expertos.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Campamentos en Valle Nuevo, La Ciénega y Valle del Tetero.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Ascensos guiados al Pico Duarte (2-3 días).</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Equipo de campamento y seguridad incluido.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Senderismo.jpg" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Senderismo</h3>
+                <p class="mb-4">Recorremos los senderos más espectaculares del país, desde el Salto Jimenoa hasta la Ruta del Baño de Nubes, con guías que conocen cada rincón de la cordillera.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Rutas para todos los niveles, de principiante a experto.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Guías locales certificados en primeros auxilios.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Recorridos a saltos de agua y reservas naturales.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 ftco-animate">
+              <figure><img src="images/Alquiler%20de%20Autobuses.jpg" alt="" class="img-fluid"></figure>
+              <div class="p-3">
+                <h3 class="h4">Alquiler de Autobuses</h3>
+                <p class="mb-4">Flota moderna y confortable de 15, 34 y 50 pasajeros, adaptada a viajes corporativos, excursiones escolares y traslados de larga distancia con los más altos estándares de calidad.</p>
+                <ul class="list-unstyled ftco-list-check text-left">
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Unidades de alta capacidad con aire acondicionado y buen equipo de música.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Choferes profesionales certificados en conducción defensiva.</span></li>
+                  <li class="d-flex mb-2"><span class="oi oi-check mr-3 text-primary"></span> <span>Mantenimiento preventivo riguroso e inspección previa a cada salida.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#masServicios" aria-expanded="false" aria-controls="masServicios" id="btnVerMasServicios">Ver Más</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light ftco-slant ftco-slant-white" id="section-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Precios</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Nuestros planes están diseñados para grupos: familias, colegios, empresas o cualquier conjunto de viajeros que quiera aprovechar tarifas especiales al viajar juntos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8">
+            <div class="row align-items-end justify-content-center">
+              <div class="col-sm-5 mb-3 mb-sm-0">
+                <label for="pricingOrigen" class="ftco-uppercase" style="font-size:.8rem;font-weight:700;display:block;margin-bottom:.4rem;">Origen</label>
+                <select class="form-control" id="pricingOrigen">
+                  <option>Moca</option>
+                  <option>Santiago</option>
+                  <option>Santo Domingo</option>
+                  <option>Puerto Plata</option>
+                  <option>Baní</option>
+                  <option>Barahona</option>
+                  <option>Bayaguana</option>
+                  <option>Constanza</option>
+                  <option>Dajabón</option>
+                  <option>Este del país</option>
+                  <option>Higuey</option>
+                  <option>Jamao</option>
+                  <option>Jarabacoa</option>
+                  <option>La Romana</option>
+                  <option>La Vega</option>
+                  <option>Licey</option>
+                  <option>Miches</option>
+                  <option>Montecristi</option>
+                  <option>Nagua</option>
+                  <option>Neiba</option>
+                  <option>Sajoma</option>
+                  <option>Salcedo</option>
+                  <option>Samaná</option>
+                  <option>San Cristóbal</option>
+                  <option>San Fco. Macorís</option>
+                  <option>San José de Ocoa</option>
+                  <option>San Pedro Macorís</option>
+                  <option>Sur del país</option>
+                  <option>Bonao</option>
+                  <option>Bayahibe</option>
+                  <option>Villa Altagracia</option>
+                  <option>Punta Rucia</option>
+                </select>
+              </div>
+              <div class="col-sm-5 mb-3 mb-sm-0">
+                <label for="pricingDestino" class="ftco-uppercase" style="font-size:.8rem;font-weight:700;display:block;margin-bottom:.4rem;">Destino</label>
+                <input type="text" class="form-control" id="pricingDestino" placeholder="Escribe tu destino">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md bg-white p-5 m-2 text-center mb-2 ftco-animate">
+            <div class="ftco-pricing">
+              <h2>Minibús</h2>
+              <p class="ftco-price-per text-center" style="margin-bottom:0;line-height:1;"><sup>$</sup><strong>4,200</strong><small style="font-size:1rem;font-weight:400;color:#6c757d;">p/p</small></p>
+              <p class="text-muted" style="font-size:.75rem;margin-top:3px;margin-bottom:1rem;">~US$72</p>
+              <ul class="list-unstyled mb-5">
+                <li>Acompañamiento</li>
+                <li>Almuerzo Buffet</li>
+                <li>Fotos digitales</li>
+                <li>Desayuno</li>
+                <li>Merienda</li>
+                <li>Café</li>
+                <li>Refrigerio todo el día</li>
+                <li><strong>Embarcación</strong></li>
+              </ul>
+              <p class="mb-2"><a href="#" data-toggle="collapse" data-target="#pricingVisitandoMinibus" aria-expanded="false" aria-controls="pricingVisitandoMinibus" id="btnVerMasPricingMinibus" class="text-muted" style="font-size:.75rem;">Ver Más</a></p>
+              <div class="collapse" id="pricingVisitandoMinibus">
+                <p class="text-muted text-left mb-1" style="font-size:.8rem;"><strong>Visitando:</strong></p>
+                <ul class="text-muted text-left mb-3" style="font-size:.8rem;padding-left:1.1rem;">
+                  <li>Sendero de las Cruces</li>
+                  <li>La Torre del Reloj</li>
+                  <li>Isla La Cabra</li>
+                  <li>La Plataforma</li>
+                </ul>
+              </div>
+              <p class="ftco-capacity-wrap"><span class="ftco-capacity-box">10/14 personas</span></p>
+              <p><a href="#section-contact" class="btn btn-secondary btn-sm">Solicitar</a></p>
+            </div>
+          </div>
+          <div class="col-md bg-white  ftco-pricing-popular p-5 m-2 text-center mb-2 ftco-animate">
+            <span class="popular-text">Popular</span>
+            <div class="ftco-pricing">
+              <h2>Autobús</h2>
+              <p class="ftco-price-per text-center" style="margin-bottom:0;line-height:1;"><sup>$</sup><strong class="text-primary">3,900</strong><small style="font-size:1rem;font-weight:400;color:#6c757d;">p/p</small></p>
+              <p class="text-muted" style="font-size:.75rem;margin-top:3px;margin-bottom:1rem;">~US$68</p>
+              <ul class="list-unstyled mb-5">
+                <li>Acompañamiento</li>
+                <li>Almuerzo Buffet</li>
+                <li>Fotos digitales</li>
+                <li>Desayuno</li>
+                <li>Merienda</li>
+                <li>Café / Té</li>
+                <li>Refrigerio todo el día</li>
+                <li><strong>Embarcación</strong></li>
+              </ul>
+              <p class="mb-2"><a href="#" data-toggle="collapse" data-target="#pricingVisitandoAutobus" aria-expanded="false" aria-controls="pricingVisitandoAutobus" id="btnVerMasPricingAutobus" class="text-muted" style="font-size:.75rem;">Ver Más</a></p>
+              <div class="collapse" id="pricingVisitandoAutobus">
+                <p class="text-muted text-left mb-1" style="font-size:.8rem;"><strong>Visitando:</strong></p>
+                <ul class="text-muted text-left mb-3" style="font-size:.8rem;padding-left:1.1rem;">
+                  <li>Sendero de las Cruces</li>
+                  <li>La Torre del Reloj</li>
+                  <li>Isla La Cabra</li>
+                  <li>La Plataforma</li>
+                </ul>
+              </div>
+              <p class="ftco-capacity-wrap"><span class="ftco-capacity-box">25/30 personas</span></p>
+              <p><a href="#section-contact" class="btn btn-primary btn-sm">Solicitar</a></p>
+            </div>
+          </div>
+          <div class="col-md bg-white p-5 m-2 text-center mb-2 ftco-animate">
+            <div class="ftco-pricing">
+              <h2>Metrobús</h2>
+              <p class="ftco-price-per text-center" style="margin-bottom:0;line-height:1;"><sup>$</sup><strong>3,750</strong><small style="font-size:1rem;font-weight:400;color:#6c757d;">p/p</small></p>
+              <p class="text-muted" style="font-size:.75rem;margin-top:3px;margin-bottom:1rem;">~US$64</p>
+              <ul class="list-unstyled mb-5">
+                <li>Acompañamiento</li>
+                <li>Almuerzo Buffet</li>
+                <li>Fotos digitales</li>
+                <li>Desayuno</li>
+                <li>Merienda</li>
+                <li>Café / Té</li>
+                <li>Refrigerio todo el día</li>
+                <li><strong>Embarcación</strong></li>
+              </ul>
+              <p class="mb-2"><a href="#" data-toggle="collapse" data-target="#pricingVisitandoMetrobus" aria-expanded="false" aria-controls="pricingVisitandoMetrobus" id="btnVerMasPricingMetrobus" class="text-muted" style="font-size:.75rem;">Ver Más</a></p>
+              <div class="collapse" id="pricingVisitandoMetrobus">
+                <p class="text-muted text-left mb-1" style="font-size:.8rem;"><strong>Visitando:</strong></p>
+                <ul class="text-muted text-left mb-3" style="font-size:.8rem;padding-left:1.1rem;">
+                  <li>Sendero de las Cruces</li>
+                  <li>La Torre del Reloj</li>
+                  <li>Isla La Cabra</li>
+                  <li>La Plataforma</li>
+                </ul>
+              </div>
+              <p class="ftco-capacity-wrap"><span class="ftco-capacity-box">40/48 personas</span></p>
+              <p><a href="#section-contact" class="btn btn-secondary btn-sm">Solicitar</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted" style="font-size:.75rem;margin-bottom:1rem;">Ten en cuenta que el valor final de este presupuesto puede variar según tu <strong>punto específico de partida</strong>, el número total de participantes y la ruta o los destinos especificados en el itinerario final. Los precios aquí presentados están <strong>vigentes</strong> hasta el <strong>28 febrero 2027</strong>.</p>
+            <a href="#section-contact" class="btn btn-primary" style="font-size:.85rem;padding:.32rem .64rem;">Solicitud especial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-slant ftco-slant-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Más Características</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Más allá de la planificación del viaje, cuidamos cada detalle que te da tranquilidad: acompañamiento constante, respaldo ante imprevistos, facilidades para pagar y guías certificados en cada destino.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel ftco-owl">
+
+              <div class="item ftco-animate">
+                <div class="media d-block text-left ftco-media p-md-5 p-4">
+                  <div class="ftco-icon mb-3"><span class="oi oi-clock display-4"></span></div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Atención en Cada Punto</h5>
+                    <p>Estamos disponibles antes, durante y después de tu viaje para resolver cualquier imprevisto, sin dejarte solo en ningún momento del proceso.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item ftco-animate">
+                <div class="media d-block text-left ftco-media p-md-5 p-4">
+                  <div class="ftco-icon mb-3"><span class="oi oi-shield display-4"></span></div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Viajes Protegidos</h5>
+                    <p>Trabajamos con proveedores certificados y opciones de seguro de viaje, para que tu tranquilidad y la de los tuyos formen parte del itinerario desde el primer día.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item ftco-animate">
+                <div class="media d-block text-left ftco-media p-md-5 p-4">
+                  <div class="ftco-icon mb-3"><span class="oi oi-credit-card display-4"></span></div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Facilidades de Pago</h5>
+                    <p>Ofrecemos planes de pago flexibles y métodos accesibles para que reserves tu viaje sin complicaciones financieras ni pagos únicos que compliquen tu presupuesto.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item ftco-animate">
+                <div class="media d-block text-left ftco-media p-md-5 p-4">
+                  <div class="ftco-icon mb-3"><span class="oi oi-badge display-4"></span></div>
+                  <div class="media-body">
+                    <h5 class="mt-0">Guías Locales Certificados</h5>
+                    <p>Contamos con guías certificados que conocen cada destino a fondo, garantizando seguridad, información confiable y una experiencia auténtica en cada recorrido.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section ftco-slant ftco-slant-light  bg-light ftco-slant ftco-slant-white" id="section-faq">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Resolvemos las dudas más comunes sobre quiénes somos, cómo facturamos, con cuánta antelación planificar y qué tan flexibles son nuestros paquetes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿De dónde viene el nombre tan raro de ustedes?</h3>
+            <p>El nombre nace de nuestra propia familia: somos cuatro hermanos, y "Jambraoa" es la unión de las iniciales de cada uno — James (Jam), Branell (Bra), Oliver (O) y Alain (A). A eso le sumamos "Tours", la palabra en inglés para recorridos, giras y excursiones. Así, Jambraoa Tours lleva en su nombre a toda la familia detrás de cada viaje que organizamos.</p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿Cómo funciona el proceso de facturación?</h3>
+            <p>Tras aprobar la propuesta, emitimos una factura detallada que refleja los servicios acordados. Esta se envía por correo electrónico y puede pagarse mediante transferencia bancaria o según tu preferencia.</p>
+            <div class="collapse" id="faqFacturacionMore">
+              <p>Si el itinerario sufre modificaciones antes del viaje —cambio de fechas, participantes o servicios— generamos una factura complementaria o una nota de crédito según corresponda, para que el monto final siempre refleje con exactitud lo contratado.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#faqFacturacionMore" aria-expanded="false" aria-controls="faqFacturacionMore" id="btnVerMasFaqFacturacion">Ver Más</a></p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿Necesito elegir un paquete fijo?</h3>
+            <p>No. Partimos de tus intereses y presupuesto para diseñar un itinerario único. Las opciones mostradas son ejemplos que ajustamos completamente después de nuestra consulta virtual gratuita.</p>
+            <div class="collapse" id="faqPaqueteMore">
+              <p>Esa consulta virtual gratuita dura entre 20 y 30 minutos, y en ella revisamos fechas disponibles, número de participantes, preferencias de actividades y presupuesto, para enviarte una propuesta ajustada en un plazo de 24 a 48 horas.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#faqPaqueteMore" aria-expanded="false" aria-controls="faqPaqueteMore" id="btnVerMasFaqPaquete">Ver Más</a></p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿Con cuánta antelación debo planificar mi viaje?</h3>
+            <p>Recomendamos contactarnos al menos 1 mes antes de la fecha deseada, especialmente para temporadas altas. Sin embargo, si tu proyecto es urgente, haremos todo lo posible por acomodarlo.</p>
+            <div class="collapse" id="faqAntelacionMore">
+              <p>Para grupos grandes, viajes internacionales o fechas de temporada alta —Semana Santa, verano o fin de año— recomendamos un margen de al menos 2 meses, ya que la disponibilidad de transporte y alojamiento se reduce rápidamente en esas fechas.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#faqAntelacionMore" aria-expanded="false" aria-controls="faqAntelacionMore" id="btnVerMasFaqAntelacion">Ver Más</a></p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿Emiten factura con comprobante fiscal?</h3>
+            <p>Sí, emitimos Factura con Comprobante Fiscal (NCF). Estamos debidamente constituidos y registrados, por lo que podemos brindarle el comprobante fiscal que su empresa o institución requiera para sus registros y deducciones.</p>
+            <div class="collapse" id="faqComprobanteMore">
+              <p>El NCF queda incluido automáticamente en la factura enviada por correo, sin necesidad de solicitud adicional, y respaldado en nuestros registros internos ante cualquier verificación posterior de la DGII.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#faqComprobanteMore" aria-expanded="false" aria-controls="faqComprobanteMore" id="btnVerMasFaqComprobante">Ver Más</a></p>
+          </div>
+          <div class="col-md-6 mb-5 ftco-animate">
+            <h3 class="h5 mb-4">¿Qué incluyen nuestros planes?</h3>
+            <p>En nuestras excursiones ecoturísticas de un día, generalmente incluimos: acompañamiento de nuestro staff, fotografías profesionales digitales del recorrido, desayuno, almuerzo y merienda, además de las actividades programadas para la jornada.</p>
+            <div class="collapse" id="faqPlanesMore">
+              <p>También cubrimos los impuestos y entradas correspondientes, refrigerio disponible durante todo el día, botiquín médico y el equipo necesario según el destino, como botes u otros implementos específicos de la actividad.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#faqPlanesMore" aria-expanded="false" aria-controls="faqPlanesMore" id="btnVerMasFaqPlanes">Ver Más</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-slant ftco-slant-light" id="section-about">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Sobre Nosotros</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Conoce el propósito, los valores y la historia detrás de Jambraoa Tours. Si tienes alguna pregunta, escríbenos a <a href="mailto:info@jambraoatours.com">info@jambraoatours.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+
+
+        <div class="row no-gutters align-items-center ftco-animate">
+          <div class="col-md-6 mb-md-0 mb-5">
+            <img src="images/bg_3.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 p-md-5">
+            <h3 class="h3 mb-4">Nuestro Propósito</h3>
+            <p>Ayudamos a las personas a conocer el país, gestionando sus vacaciones y viajes de la manera más sencilla y fluida posible.</p>
+            <div class="collapse" id="aboutPropositoMore">
+              <p>Nuestra visión es inspirar a personas de todo el mundo a conocer República Dominicana, a experimentar y conectarse con una nueva cultura, ideas, gastronomía, paisajes y personas.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#aboutPropositoMore" aria-expanded="false" aria-controls="aboutPropositoMore" id="btnVerMasAboutProposito">Ver Más</a></p>
+          </div>
+        </div>
+        <div class="row no-gutters align-items-center ftco-animate">
+          <div class="col-md-6 order-md-3 mb-md-0 mb-5">
+            <img src="images/bg_1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 p-md-5 order-md-1">
+            <h3 class="h3 mb-4">Nuestros Valores</h3>
+            <p>Todo lo que hacemos se sostiene en seis valores: discreción, responsabilidad, profesionalismo, confianza, diversión y empatía. Son ellos los que guían cada recomendación, cada itinerario y cada conversación con nuestros clientes.</p>
+            <div class="collapse" id="aboutValoresMore">
+              <p>Nos relacionamos con nuestros clientes con empatía, poniéndonos siempre en su lugar; con nuestros suplidores y contactos como socios y amigos con quienes crecemos en confianza; y con nuestro equipo con respeto, cumpliendo responsabilidades en un ambiente de trabajo sin estrés. Así proyectamos una marca profesional e inteligente, divertida y jovial, con un toque irreverente solo a la hora de viajar.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#aboutValoresMore" aria-expanded="false" aria-controls="aboutValoresMore" id="btnVerMasAboutValores">Ver Más</a></p>
+          </div>
+        </div>
+        <div class="row no-gutters align-items-center ftco-animate">
+          <div class="col-md-6 mb-md-0 mb-5">
+            <img src="images/Oliver 2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 p-md-5">
+            <h3 class="h3 mb-4">¿Por qué existe Jambraoa Tours?</h3>
+            <p>Soy Oliver, en mi infancia viajé muy poco: unas pocas veces a la playa, pocas veces al rio, casi nunca a un resort, y solo un par de excursiones de colegio que todavía recuerdo con claridad y nostalgia. La economía familiar y el poco tiempo libre de mis padres hicieron que conocer mi propio país fuera, para mí, casi un lujo.</p>
+            <div class="collapse" id="aboutHistoriaMore">
+              <p>Con el tiempo entendí que esa misma limitación la viven muchas familias dominicanas: no por falta de ganas, sino por falta de información, de compañía o de alguien que las anime a salir. Por eso fundé Jambraoa Tours junto a mis hermanos — no quiero que a los niños que crecen hoy les pase lo mismo que a mí, que se les pasen los años sin conocer los lugares que hacen historia en nuestro país. Cada viaje que organizamos es, en el fondo, un intento de darle a otras familias las experiencias que a la mía le costó alcanzar.</p>
+            </div>
+            <p class="mb-5"><a href="#" data-toggle="collapse" data-target="#aboutHistoriaMore" aria-expanded="false" aria-controls="aboutHistoriaMore" id="btnVerMasAboutHistoria">Ver Más</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="ftco-section bg-light ftco-slant ftco-slant-white" id="section-counter">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Datos Curiosos</h2>
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7">
+                <p class="lead">Estas cifras reflejan la confianza que hemos construido a lo largo de los años: una comunidad que crece en redes sociales, miles de viajantes que ya han vivido experiencias con nosotros y decenas de instituciones que confían en nuestro trabajo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number" data-number="9590">0</span>
+              <span class="ftco-label">Seguidores en Redes</span>
+            </div>
+          </div>
+          <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number-viajantes" id="viajantesCounter">1,992</span>
+              <span class="ftco-label">Viajantes</span>
+            </div>
+          </div>
+          <div class="col-md ftco-animate">
+            <div class="ftco-counter text-center">
+              <span class="ftco-number" data-number="56">0</span>
+              <span class="ftco-label">Instituciones que han Confiado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="ftco-section bg-white ftco-slant ftco-slant-dark" id="section-contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7 pr-md-5 mb-5">
+            <div class="contact-form-card">
+              <p class="cf-intro">Ponte en contacto y descubre cómo podemos transformar tus ideas en un viaje inolvidable.</p>
+              <form id="contactForm" action="" method="post">
+                <div class="form-group">
+                  <label for="name" class="cf-label">Nombre / Apellido <span class="cf-optional">(obligatorio)</span></label>
+                  <input type="text" class="form-control cf-input" id="name" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="cf-group-label">Teléfono / Whatsapp</label>
+                  <div class="row">
+                    <div class="col-sm-7 mb-3 mb-sm-0">
+                      <label for="country" class="cf-label">País</label>
+                      <select class="form-control cf-input" id="country">
+                        <option>República Dominicana</option>
+                        <option>Estados Unidos</option>
+                        <option>México</option>
+                        <option>España</option>
+                        <option>Otro</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-5">
+                      <label for="phone" class="cf-label">Número</label>
+                      <input type="tel" class="form-control cf-input" id="phone" placeholder="+1">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="cf-label">Correo electrónico <span class="cf-optional">(obligatorio)</span></label>
+                  <input type="email" class="form-control cf-input" id="email" required>
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="budget" class="cf-label">Presupuesto</label>
+                      <div class="cf-prefix-wrap">
+                        <span class="cf-prefix">$</span>
+                        <input type="number" class="form-control cf-input cf-input-prefixed" id="budget">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="date" class="cf-label">Fecha</label>
+                      <input type="date" class="form-control cf-input" id="date">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="interest" class="cf-label">Interes</label>
+                  <textarea class="form-control cf-input" id="interest" rows="4"></textarea>
+                </div>
+
+                <div class="form-group cf-checks">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="optEmail">
+                    <label class="form-check-label" for="optEmail">Quiero recibir correos de promociones.</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="optWhatsapp">
+                    <label class="form-check-label" for="optWhatsapp">Quiero recibir mensajes en mi WhatsApp de promociones.</label>
+                  </div>
+                </div>
+
+                <div class="form-group text-right mb-0">
+                  <button type="submit" class="btn cf-btn">Enviar</button>
+                </div>
+              </form>
+              <div class="cf-success" id="contactSuccess" style="display:none;">
+                <p>Nuestro equipo te guiará paso a paso y preparará una propuesta sin compromiso.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" id="map">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="ftco-footer ftco-bg-dark">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2" style="font-weight:700;">Empresa</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#section-about" class="py-2 d-block">Nosotros</a></li>
+                    <li><a href="#modalTrabajaConNosotros" data-toggle="modal" data-target="#modalTrabajaConNosotros" class="py-2 d-block">Trabaja con Nosotros</a></li>
+                    <li><a href="#modalCertificaciones" data-toggle="modal" data-target="#modalCertificaciones" class="py-2 d-block">Certificaciones y Registro</a></li>
+                    <li><a href="#modalAlianzas" data-toggle="modal" data-target="#modalAlianzas" class="py-2 d-block">Alianzas y Proveedores</a></li>
+                    <li><a href="#modalParteHistoria" data-toggle="modal" data-target="#modalParteHistoria" class="py-2 d-block">Nuestra Filosofía</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2" style="font-weight:700;">Comunidades</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#section-faq" class="py-2 d-block">Soporte</a></li>
+                    <li><a href="#modalTestimonios" data-toggle="modal" data-target="#modalTestimonios" class="py-2 d-block">Testimonios de Clientes</a></li>
+                    <li><a href="#modalGaleria" data-toggle="modal" data-target="#modalGaleria" class="py-2 d-block">Galería de Viajes</a></li>
+                    <li><a href="#modalCentrosConfian" data-toggle="modal" data-target="#modalCentrosConfian" class="py-2 d-block">Instituciones que Confían</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2" style="font-weight:700;">Políticas</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#modalPoliticaEcoturisticos" data-toggle="modal" data-target="#modalPoliticaEcoturisticos" class="py-2 d-block">Ecoturísticas</a></li>
+                    <li><a href="#modalPoliticaEducativas" data-toggle="modal" data-target="#modalPoliticaEducativas" class="py-2 d-block">Educativas</a></li>
+                    <li><a href="#modalPoliticaInternacionales" data-toggle="modal" data-target="#modalPoliticaInternacionales" class="py-2 d-block">Viajes Internacionales</a></li>
+                    <li><a href="#modalPoliticaResorts" data-toggle="modal" data-target="#modalPoliticaResorts" class="py-2 d-block">Resorts</a></li>
+                    <li><a href="#modalPoliticaAutobuses" data-toggle="modal" data-target="#modalPoliticaAutobuses" class="py-2 d-block">Alquiler de Autobuses</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
+                <li><a href="https://facebook.com/JambraoaTours" target="_blank" rel="noopener" aria-label="Facebook"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://instagram.com/JambraoaTours" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+                <li><a href="https://wa.me/18293974615" target="_blank" rel="noopener" aria-label="WhatsApp"><span><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.2-.347.223-.644.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.05 22c-1.66 0-3.294-.44-4.727-1.276L2 22l1.303-4.837A9.947 9.947 0 0 1 2.05 12C2.05 6.477 6.527 2 12.05 2S22 6.477 22 12s-4.477 10-9.95 10zm0-18.5A8.5 8.5 0 0 0 3.55 12c0 1.535.44 3.02 1.27 4.31l.192.297-.744 2.76 2.83-.742.287.176A8.46 8.46 0 0 0 12.05 20.5 8.5 8.5 0 0 0 20.55 12a8.5 8.5 0 0 0-8.5-8.5z"/></svg></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md text-left">
+            <p>&copy; Jambraoa Tours 2026. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modalPoliticaEcoturisticos" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaEcoturisticosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4">
+            <h4 class="mb-4 text-center" id="modalPoliticaEcoturisticosLabel">Ecoturísticas</h4>
+            <ol class="pl-3">
+              <li>Reservar con el 30% del costo del paseo.</li>
+              <li>La reservación no es reembolsable.</li>
+              <li>En caso de cancelar con el debido tiempo, la reserva estará disponible para otro paseo.</li>
+              <li>Las cancelaciones deben hacerse 48 horas antes del paseo, de lo contrario se perderá la reserva.</li>
+              <li>El restante del dinero debe ser pagado 2 días antes del paseo.</li>
+              <li>Obedecer a los guías en todo momento.</li>
+              <li>Respetar el tiempo y espacio de todo el grupo.</li>
+              <li>Tirar la basura en los lugares seleccionados (bolsa plástica).</li>
+              <li>Si se siente mal o desea ir al baño, informe con tiempo.</li>
+              <li>No alcohol en el bus.</li>
+              <li>No malas palabras.</li>
+              <li>No riñas ni discusiones.</li>
+              <li>Quitar la arena y secarse lo mejor posible antes de entrar al bus.</li>
+              <li>El punto de salida será el punto de llegada.</li>
+              <li>Cuando haya parada, todos deben ir al baño.</li>
+              <li>Cuando estemos en los lugares a visitar, avisaremos que nos vamos y daremos 5 minutos para llegar al bus.</li>
+              <li>Cuando se le tome una foto, trate de sonreír.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPoliticaEducativas" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaEducativasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4" style="max-height:75vh;overflow-y:auto;">
+            <h4 class="mb-1 text-center" id="modalPoliticaEducativasLabel">Educativas</h4>
+            <p class="text-center text-muted mb-4" style="font-size:.85rem;">Normas y condiciones para excursiones educativas</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">1. Cantidad de Participantes por Guagua</h6>
+            <div class="table-responsive mb-3">
+              <table class="table table-sm table-bordered text-center mb-0" style="font-size:.9rem;">
+                <thead class="bg-light">
+                  <tr><th>Vehículo</th><th>Mínimo</th><th>Máximo (con profesores)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Minibús</td><td>13</td><td>14</td></tr>
+                  <tr><td>Autobús</td><td>25</td><td>32</td></tr>
+                  <tr><td>Autobús grande</td><td>50</td><td>48</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="pl-3 mb-4">
+              <li>Los precios conversados aplican para grupos de mínimo 25 personas pagando; disponibilidad y tarifa sujetas a cambio sin previo aviso.</li>
+              <li>Por cada 15 participantes se incluye <strong>1 profesor gratis</strong>; el excedente de profesores tendrá un costo del <strong>50% del paseo</strong>.</li>
+              <li>El "mínimo" cuenta solo participantes (sin profesores); el "máximo" ya incluye a los profesores que acompañan al grupo.</li>
+              <li>Para sumar un autobús adicional es necesario llegar al <strong>80%</strong> de ocupación del primero y alcanzar el mínimo del segundo.</li>
+              <li>El centro debe respetar la autoridad del staff acompañante; de lo contrario, la agencia podrá cancelar el paseo y regresar al centro, con reembolso parcial o nulo según los gastos ya incurridos.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">2. Rol de los Profesores o Personal de Apoyo</h6>
+            <p style="font-size:.9rem;">Su función es apoyar la organización y logística del paseo, acatando siempre las direcciones del staff de la agencia:</p>
+            <ol class="pl-3 mb-4">
+              <li>Organizar a los estudiantes dentro de la guagua, ya que conocen mejor a quiénes conviene separar (riñas, noviazgos, etc.).</li>
+              <li>Organizar filas para entrar a la guagua y a los lugares a visitar.</li>
+              <li>Recoger al grupo al momento de partir hacia el siguiente lugar.</li>
+              <li>Pasar la lista dentro de la guagua, salvo que el punto quede muy lejos de ella.</li>
+              <li>Apoyar la distribución de la comida — no se come hasta que todos los estudiantes hayan comido.</li>
+              <li>Distribuirse entre el grupo (no permanecer juntos) para mantener el control y estar atentos a todo momento.</li>
+              <li>Colaborar con cualquier solicitud puntual del staff de la agencia.</li>
+            </ol>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">3. Guías de la Excursión</h6>
+            <p class="mb-4" style="font-size:.9rem;">Enviamos un guía para toda la excursión sin importar la cantidad de participantes. Según los compromisos de la empresa, puede sumarse un segundo staff sin costo adicional para el centro — aunque la agencia no está obligada a ello, dada la confianza en la preparación de nuestro personal.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">4. Cobros</h6>
+            <p class="mb-4" style="font-size:.9rem;">No se cobra ningún monto antes del día de la excursión, para mayor seguridad del centro. El pago total de todos los participantes debe completarse antes de salir el día del paseo. Es importante confirmar con precisión la cantidad de participantes y de profesores que asistirán, para que la confianza mutua se mantenga.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">5. Horarios de Salida</h6>
+            <p style="font-size:.9rem;">Se convoca a los estudiantes a una hora determinada, y nos comprometemos a salir <strong>40 minutos después</strong> de esa hora, ya que sabemos que niños y jóvenes suelen retrasarse. Cualquier demora más allá de ese margen corre por cuenta del centro educativo, y afectará también la hora de regreso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPoliticaInternacionales" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaInternacionalesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4" style="max-height:75vh;overflow-y:auto;">
+            <h4 class="mb-1 text-center" id="modalPoliticaInternacionalesLabel">Viajes Internacionales</h4>
+            <p class="text-center text-muted mb-4" style="font-size:.85rem;">Condiciones aplicables a viajes fuera de República Dominicana</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">1. Requisitos Migratorios y de Visado</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>Es responsabilidad del viajero consultar y verificar los requisitos migratorios y de visado del destino elegido.</li>
+              <li>El pasaporte debe tener una vigencia mínima de <strong>6 meses</strong> al momento del viaje.</li>
+              <li>Dependiendo del destino, los pasajeros con pasaporte dominicano sí pueden requerir visado.</li>
+              <li>Pasajeros con otra nacionalidad deben consultar directamente con el consulado correspondiente a su caso.</li>
+              <li>Recomendamos gestionar el visado con el Consulado del país correspondiente, según la nacionalidad del pasajero.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">2. Visados y Cancelaciones</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>La denegación de un visado <strong>no exime</strong> de las políticas de cancelación ya establecidas.</li>
+              <li>Gestiona tu cita consular con suficiente anticipación para evitar penalidades.</li>
+              <li>Las solicitudes de cancelación se procesan únicamente en días laborables.</li>
+              <li>Es responsabilidad exclusiva del cliente confirmar con su Ejecutiva de Ventas la recepción de la solicitud.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">3. Concesiones para Tour Conductor</h6>
+            <p class="mb-4" style="font-size:.9rem;">Las gratuidades, descuentos, cortesías y concesiones para el Tour Conductor se calculan según la cantidad de pasajeros cotizada. Si el grupo se reduce, estas condiciones podrán modificarse o dejar de aplicar.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">4. Tasa de Cambio</h6>
+            <p class="mb-4" style="font-size:.9rem;">Se aplica la tasa vigente al momento del pago, la cual puede variar sin previo aviso. Antes de realizar cualquier transferencia o depósito, confirmamos con el suplidor la tasa correspondiente a la transacción.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">5. Cambios Operativos</h6>
+            <p class="mb-4" style="font-size:.9rem;">Los itinerarios y servicios cotizados están sujetos a cambios por parte de aerolíneas y demás proveedores, por ajustes operativos, disponibilidad o situaciones propias del destino, sin previo aviso. Cualquier modificación o costo adicional será informado oportunamente.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">6. Pagos</h6>
+            <p style="font-size:.9rem;">Para garantizar los espacios reservados es indispensable cumplir con las fechas de pago establecidas. Si el pago no se recibe dentro del plazo indicado, el suplidor se reserva el derecho de cancelar la reserva y aplicar las penalidades correspondientes, de acuerdo con sus políticas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPoliticaResorts" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaResortsLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4" style="max-height:75vh;overflow-y:auto;">
+            <h4 class="mb-1 text-center" id="modalPoliticaResortsLabel">Resorts</h4>
+            <p class="text-center text-muted mb-4" style="font-size:.85rem;">Condiciones aplicables a paquetes de resort y estadías todo incluido</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">1. Reservas y Depósito</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>Toda reserva debe garantizarse con un depósito o tarjeta de crédito al momento de confirmar el paquete.</li>
+              <li>El saldo restante debe quedar totalmente pagado antes de la fecha de check-in indicada en tu itinerario.</li>
+              <li>Tarifas y disponibilidad están sujetas a cambio sin previo aviso hasta que la reserva quede confirmada.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">2. Cambios y Cancelaciones</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>Las cancelaciones y cambios de fecha están sujetos a disponibilidad y a las políticas propias del resort seleccionado.</li>
+              <li>Cancelaciones realizadas con poca anticipación o inasistencia ("no-show") pueden facturarse al 100% del valor reservado.</li>
+              <li>Durante fechas festivas o de alta demanda, algunos resorts no permiten cancelaciones ni modificaciones.</li>
+              <li>Toda solicitud de cancelación debe enviarse por escrito y será confirmada por tu Ejecutiva de Ventas.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">3. Situaciones de Fuerza Mayor</h6>
+            <p class="mb-4" style="font-size:.9rem;">En caso de alertas de huracán u otras situaciones climáticas declaradas por las autoridades dentro de las 48 horas previas a tu llegada, podrás optar por un crédito para una futura estadía, sujeto a las condiciones del resort correspondiente.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">4. Check-in, Check-out y Servicios Incluidos</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>Los horarios de check-in y check-out siguen el estándar del resort; el early check-in o late check-out está sujeto a disponibilidad y puede tener un costo adicional.</li>
+              <li>Las bebidas, actividades y servicios incluidos en el plan "todo incluido" se rigen por las políticas propias de cada resort.</li>
+              <li>Se requiere identificación válida al ingreso; los menores de edad deben viajar con la autorización correspondiente.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">5. Documentación del Viajero</h6>
+            <p style="font-size:.9rem;">Es responsabilidad del huésped presentar identificación vigente y cumplir con cualquier requisito adicional solicitado por el resort al momento del check-in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPoliticaAutobuses" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaAutobusesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4" style="max-height:75vh;overflow-y:auto;">
+            <h4 class="mb-1 text-center" id="modalPoliticaAutobusesLabel">Alquiler de Autobuses</h4>
+            <p class="text-center text-muted mb-4" style="font-size:.85rem;">Condiciones para el servicio de transporte y alquiler de unidades</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">1. Reserva del Servicio</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>La reserva se garantiza con un depósito del 30% del costo total del servicio.</li>
+              <li>Al confirmar, se establece la ruta, el horario, los puntos de recogida y la cantidad exacta de pasajeros.</li>
+              <li>El saldo restante debe pagarse antes de la salida de la unidad.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">2. Cancelaciones y Cambios</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>Las cancelaciones deben notificarse con al menos <strong>48 horas</strong> de anticipación; de lo contrario, se pierde el depósito.</li>
+              <li>Cambios de ruta, horario o punto de recogida deben solicitarse con anticipación y están sujetos a disponibilidad y posible costo adicional.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">3. Capacidad y Seguridad de las Unidades</h6>
+            <ul class="pl-3 mb-4" style="font-size:.9rem;">
+              <li>No se excede el número de pasajeros permitido por unidad, por seguridad de todo el grupo.</li>
+              <li>Todas las unidades cuentan con choferes certificados, mantenimiento al día y seguro de pasajeros vigente.</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">4. Puntualidad</h6>
+            <p class="mb-4" style="font-size:.9rem;">La unidad espera hasta 15 minutos en cada punto de recogida acordado. Tiempo de espera adicional solicitado por el cliente puede generar un cargo extra según el caso.</p>
+
+            <h6 class="ftco-uppercase text-primary mb-3" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">5. Conducta a Bordo y Responsabilidad por Daños</h6>
+            <p style="font-size:.9rem;">Se debe mantener el orden y respeto dentro de la unidad, siguiendo las indicaciones del chofer y del staff. Cualquier daño ocasionado al vehículo por mal uso durante el servicio será responsabilidad del grupo contratante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalParteHistoria" tabindex="-1" role="dialog" aria-labelledby="modalParteHistoriaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4">
+            <h4 class="mb-4 text-center" id="modalParteHistoriaLabel">Nuestra Filosofía</h4>
+            <p class="text-left">El mundo de hoy se mueve tan rápido que casi no nos da tiempo para respirar. Las cosas avanzan tan deprisa que nuestra mente siempre está pendiente de que nos estamos perdiendo de algo, y eso nos lleva a un estrés y una ansiedad silenciosa.</p>
+            <p class="text-left">Lo que proponemos es justamente eso: una pausa. Una desconexión, una estación donde detenerse — a veces para descansar física o mentalmente, otras para replantearnos las cosas, y otras simplemente para salir de esas vías rápidas de la vida y recargar baterías.</p>
+            <p class="text-left">Solemos infravalorar esa pausa, sin pensar en los beneficios que trae ni en las consecuencias de ignorarla. Es un factor clave para la salud, el bienestar y la productividad, y nuestro estado de ánimo se transforma por completo cuando nos la damos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTrabajaConNosotros" tabindex="-1" role="dialog" aria-labelledby="modalTrabajaConNosotrosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <h4 class="mb-4" id="modalTrabajaConNosotrosLabel">Trabaja con Nosotros</h4>
+            <p class="text-left">Estamos preparando esta sección con las vacantes y perfiles que buscamos para sumarse al equipo de Jambraoa Tours. Mientras tanto, si quieres formar parte de nuestro staff de guías o personal de apoyo, escríbenos a <a href="mailto:info@jambraoatours.com">info@jambraoatours.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCertificaciones" tabindex="-1" role="dialog" aria-labelledby="modalCertificacionesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <h4 class="mb-4" id="modalCertificacionesLabel">Certificaciones y Registro</h4>
+            <p class="text-left">Muy pronto detallaremos aquí nuestro registro legal, comprobante fiscal (NCF) y las afiliaciones del sector turístico que respaldan a Jambraoa Tours. Si necesitas esta información antes, contáctanos a <a href="mailto:info@jambraoatours.com">info@jambraoatours.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAlianzas" tabindex="-1" role="dialog" aria-labelledby="modalAlianzasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <h4 class="mb-4" id="modalAlianzasLabel">Alianzas y Proveedores</h4>
+            <p class="text-left">Estamos organizando el listado de hoteles, resorts, transportistas y demás proveedores con los que trabajamos habitualmente. Vuelve pronto para conocerlos, o escríbenos a <a href="mailto:info@jambraoatours.com">info@jambraoatours.com</a> si tienes alguna pregunta puntual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTestimonios" tabindex="-1" role="dialog" aria-labelledby="modalTestimoniosLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <h4 class="mb-4" id="modalTestimoniosLabel">Testimonios de Clientes</h4>
+            <p class="text-left">Estamos recopilando las opiniones reales de las familias, colegios y empresas que ya han viajado con nosotros para compartirlas en esta sección. ¿Ya viajaste con Jambraoa Tours? Envíanos tu testimonio a <a href="mailto:info@jambraoatours.com">info@jambraoatours.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalGaleria" tabindex="-1" role="dialog" aria-labelledby="modalGaleriaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-center px-4 pb-4">
+            <h4 class="mb-4" id="modalGaleriaLabel">Galería de Viajes</h4>
+            <p class="text-left">Muy pronto encontrarás aquí una galería con fotos reales de nuestras excursiones y viajes anteriores. Mientras la preparamos, puedes ver algunas en la sección de Servicios más arriba.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCentrosConfian" tabindex="-1" role="dialog" aria-labelledby="modalCentrosConfianLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ftco-modal-content">
+          <div class="modal-header border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+          <div class="modal-body text-left px-4 pb-4" style="max-height:75vh;overflow-y:auto;">
+            <h4 class="mb-4 text-center" id="modalCentrosConfianLabel">Instituciones que Confían</h4>
+
+            <h6 class="ftco-uppercase text-primary mb-2" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">Moca</h6>
+            <ul class="pl-3 mb-4" style="font-size:.85rem;column-count:2;column-gap:1.5rem;">
+              <li>Coop Adepe</li>
+              <li>Divino Niño</li>
+              <li>Don Bosco</li>
+              <li>Dr. Frank Díaz Domínguez</li>
+              <li>Eladio Peña de la Rosa</li>
+              <li>English Now Center</li>
+              <li>Escuela Pozo de las Palmas</li>
+              <li>Genesis Graciela</li>
+              <li>Guardería Rayos de Sol</li>
+              <li>Juan Pablo Duarte</li>
+              <li>Juan Pablo II</li>
+              <li>Los Pekes</li>
+              <li>Luis Napoleón Núñez Molina</li>
+              <li>Luis Ramón Bencosme</li>
+              <li>Maria Auxiliadora</li>
+              <li>Máximo Gómez</li>
+              <li>Milady Maria Bencosme (Juan López)</li>
+              <li>Nuevo Renacer</li>
+              <li>Onésimo Polanco</li>
+              <li>Porfirio Morales</li>
+              <li>Prof. Sixta Ramona Paulino Fernández</li>
+              <li>Quisqueya</li>
+              <li>Salome Ureña</li>
+              <li>Salvador Álvarez</li>
+              <li>Sedesic</li>
+              <li>Super Cepin</li>
+              <li>Utesiano (Cuei)</li>
+            </ul>
+
+            <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">La Vega</h6>
+            <ul class="pl-3 mb-4" style="font-size:.85rem;column-count:2;column-gap:1.5rem;">
+              <li>Agustiniano</li>
+              <li>Charles Murton</li>
+              <li>Colegio Cristiano De La Vega</li>
+              <li>Don Luis Despradel</li>
+              <li>El Edén</li>
+              <li>Francisco Diógenes Díaz</li>
+              <li>Inmaculada Concepción</li>
+              <li>Juan Luis Despradel</li>
+              <li>La Sagrada Familia</li>
+              <li>Monseñor Panal</li>
+              <li>Primavera</li>
+            </ul>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;width:60%;">Santiago</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>Cardenal Karol Józef Wojtyła</li>
+                  <li>Iglesia Cristiana Oasis</li>
+                  <li>Oasis Christian School</li>
+                  <li>Sor Juana Inés de la Cruz</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">Santo Domingo</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>Celina Pellier</li>
+                  <li>Hotel Barceló</li>
+                  <li>Madre Mazzarello</li>
+                  <li>Salesiana San José</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;width:60%;">Licey</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>Jardín Infantil Mamina</li>
+                  <li>Los Pininos</li>
+                  <li>Nueva Esperanza</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">Cayetano Germosén</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>Isabel La Católica</li>
+                  <li>Nuestra Señora del Carmen</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;width:60%;">Salcedo</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>Club Rotario</li>
+                  <li>Salome Ureña (Salcedo)</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="ftco-uppercase text-primary mb-2 city-divider" style="font-weight:700;letter-spacing:.03em;font-size:1.05rem;">Otras Ciudades</h6>
+                <ul class="pl-3 mb-4" style="font-size:.85rem;">
+                  <li>El Caimito — <span class="text-primary">Jamao</span></li>
+                  <li>Infantil Los Amiguitos (CEILA) — <span class="text-primary">San Francisco de Macorís</span></li>
+                  <li>Maria Auxiliadora — <span class="text-primary">Barahona</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#4586ff"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <!-- Mapa desactivado: la API key original no es tuya. Añade la tuya para reactivarlo. -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI"></script> -->
+    <!-- <script src="js/google-map.js"></script> -->
+
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function(){
+      $('.modal').on('show.bs.modal', function(){
+        var $modal = $(this);
+        var $slot = $modal.find('[data-icon-source]');
+        if($slot.length && $slot.children().length === 0){
+          var sourceEl = document.getElementById($slot.data('icon-source'));
+          if(sourceEl){
+            var svg = sourceEl.querySelector('svg').cloneNode(true);
+            svg.setAttribute('class','text-primary');
+            svg.removeAttribute('style');
+            $slot.append(svg);
+          }
+        }
+      });
+      $('#masServicios').on('show.bs.collapse', function(){ $('#btnVerMasServicios').text('Ver Menos'); });
+      $('#masServicios').on('hide.bs.collapse', function(){ $('#btnVerMasServicios').text('Ver Más'); });
+      $('#faqPlanesMore').on('show.bs.collapse', function(){ $('#btnVerMasFaqPlanes').text('Ver Menos'); });
+      $('#faqPlanesMore').on('hide.bs.collapse', function(){ $('#btnVerMasFaqPlanes').text('Ver Más'); });
+      $('#faqFacturacionMore').on('show.bs.collapse', function(){ $('#btnVerMasFaqFacturacion').text('Ver Menos'); });
+      $('#faqFacturacionMore').on('hide.bs.collapse', function(){ $('#btnVerMasFaqFacturacion').text('Ver Más'); });
+      $('#faqPaqueteMore').on('show.bs.collapse', function(){ $('#btnVerMasFaqPaquete').text('Ver Menos'); });
+      $('#faqPaqueteMore').on('hide.bs.collapse', function(){ $('#btnVerMasFaqPaquete').text('Ver Más'); });
+      $('#faqAntelacionMore').on('show.bs.collapse', function(){ $('#btnVerMasFaqAntelacion').text('Ver Menos'); });
+      $('#faqAntelacionMore').on('hide.bs.collapse', function(){ $('#btnVerMasFaqAntelacion').text('Ver Más'); });
+      $('#faqComprobanteMore').on('show.bs.collapse', function(){ $('#btnVerMasFaqComprobante').text('Ver Menos'); });
+      $('#faqComprobanteMore').on('hide.bs.collapse', function(){ $('#btnVerMasFaqComprobante').text('Ver Más'); });
+      $('#pricingVisitandoMinibus').on('show.bs.collapse', function(){ $('#btnVerMasPricingMinibus').text('Ver Menos'); });
+      $('#pricingVisitandoMinibus').on('hide.bs.collapse', function(){ $('#btnVerMasPricingMinibus').text('Ver Más'); });
+      $('#pricingVisitandoAutobus').on('show.bs.collapse', function(){ $('#btnVerMasPricingAutobus').text('Ver Menos'); });
+      $('#pricingVisitandoAutobus').on('hide.bs.collapse', function(){ $('#btnVerMasPricingAutobus').text('Ver Más'); });
+      $('#pricingVisitandoMetrobus').on('show.bs.collapse', function(){ $('#btnVerMasPricingMetrobus').text('Ver Menos'); });
+      $('#pricingVisitandoMetrobus').on('hide.bs.collapse', function(){ $('#btnVerMasPricingMetrobus').text('Ver Más'); });
+      $('#aboutPropositoMore').on('show.bs.collapse', function(){ $('#btnVerMasAboutProposito').text('Ver Menos'); });
+      $('#aboutPropositoMore').on('hide.bs.collapse', function(){ $('#btnVerMasAboutProposito').text('Ver Más'); });
+      $('#aboutValoresMore').on('show.bs.collapse', function(){ $('#btnVerMasAboutValores').text('Ver Menos'); });
+      $('#aboutValoresMore').on('hide.bs.collapse', function(){ $('#btnVerMasAboutValores').text('Ver Más'); });
+      $('#aboutHistoriaMore').on('show.bs.collapse', function(){ $('#btnVerMasAboutHistoria').text('Ver Menos'); });
+      $('#aboutHistoriaMore').on('hide.bs.collapse', function(){ $('#btnVerMasAboutHistoria').text('Ver Más'); });
+
+      (function(){
+        var $viaj = $('#viajantesCounter');
+        if(!$viaj.length) return;
+        var started = false;
+        function fmt(n){ return Math.floor(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+        $('#section-counter').waypoint(function(direction){
+          if(direction === 'down' && !started){
+            started = true;
+            $({val:1992}).animate({val:13225}, {
+              duration: 10000,
+              easing: 'swing',
+              step: function(now){ $viaj.text(fmt(now)); },
+              complete: function(){
+                $viaj.text(fmt(13225));
+                var tick = setInterval(function(){
+                  var current = parseInt($viaj.text().replace(/,/g,''), 10);
+                  if(current >= 13325){ clearInterval(tick); return; }
+                  $viaj.text(fmt(current + 1));
+                }, 500);
+              }
+            });
+          }
+        }, { offset: '95%' });
+      })();
+
+      $('#contactForm').on('submit', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $('#contactSuccess').fadeIn();
+      });
+
+      $('a[href="#section-contact"]').off('click').on('click', function(e){
+        e.preventDefault();
+        var $target = $('#section-contact .contact-form-card');
+        if(!$target.length) return;
+        var elTop = $target.offset().top;
+        var elHeight = $target.outerHeight();
+        var winHeight = $(window).height();
+        var scrollTo = elTop - Math.max((winHeight - elHeight) / 2, 0);
+        $('html, body').stop().animate({ scrollTop: scrollTo }, 600);
+      });
+      });
+    </script>
+
+  </body>
+</html>
